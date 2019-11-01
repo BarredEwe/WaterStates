@@ -1,9 +1,21 @@
 # WaterStates
 
-[![CI Status](https://img.shields.io/travis/BarredEwe/WaterStates.svg?style=flat)](https://travis-ci.org/BarredEwe/WaterStates)
-[![Version](https://img.shields.io/cocoapods/v/WaterStates.svg?style=flat)](https://cocoapods.org/pods/WaterStates)
-[![License](https://img.shields.io/cocoapods/l/WaterStates.svg?style=flat)](https://cocoapods.org/pods/WaterStates)
-[![Platform](https://img.shields.io/cocoapods/p/WaterStates.svg?style=flat)](https://cocoapods.org/pods/WaterStates)
+<H4 align="center">
+Simple and ready-made states for the view controller.
+</H4>
+
+<p align="center">
+<a href="https://github.com/BarredEwe/WaterStates/releases/latest"><img alt="CocoaPods" src="https://img.shields.io/cocoapods/v/WaterStates.svg"/></a>
+<a href="https://developer.apple.com/swift"><img alt="Swift5" src="https://img.shields.io/badge/language-Swift5-orange.svg"/></a> 
+<a href="https://cocoapods.org/pods/WaterStates"><img alt="License" src="https://img.shields.io/cocoapods/l/WaterStates.svg"/></a>
+<a href="https://developer.apple.com/"><img alt="Platform" src="https://img.shields.io/badge/platform-iOS-green.svg"/></a>
+</p>
+
+---
+
+## Introduction
+
+Are you sure tired of writing the same code in all view controllers? Now you can easily and simply call up the necessary states for display, WaterStates will do the rest.
 
 ## Example
 
