@@ -24,7 +24,7 @@ class Presenter: ViewControllerOutput {
     func viewIsReady() {
         view?.showState(.loading)
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.view?.showState(.error(NSError()))
+            self.view?.showState(.error)
         }
     }
 

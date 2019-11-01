@@ -13,6 +13,10 @@ public struct WaterStatesConfig {
     public static var loadingView: LoadingStateView = LoadingView.loadFromNib()
     public static var emptyView: EmptyStateView = EmptyView.loadFromNib()
 
+    public static var errorStyle: ErrorStateStyle = .default
+    public static var loadingStyle: LoadingStateStyle = .default
+    public static var emptyStyle: EmptyStateStyle = .default
+
     public static var loadingDefaultDelay: TimeInterval = 0.1
     public static var loadingDefaultMinPresentationTime: TimeInterval = 0.2
 }

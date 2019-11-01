@@ -10,14 +10,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="6KE-IY-t0z" customClass="LoadingView" customModule="WaterStates_Example" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="6KE-IY-t0z" customClass="LoadingView" customModule="WaterStates" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="1WB-2A-dJ2">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="1WB-2A-dJ2">
                     <rect key="frame" x="32" y="401.5" width="350" height="93"/>
                     <subviews>
-                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="j09-oa-Mpe">
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="j09-oa-Mpe">
                             <rect key="frame" x="156.5" y="0.0" width="37" height="37"/>
                             <color key="color" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         </activityIndicatorView>

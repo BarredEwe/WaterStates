@@ -10,6 +10,7 @@ import UIKit
 
 public protocol StateView: UIView, DisplaybleView { }
 
+// MARK: ContentType
 typealias ListModel = [String]
 
 enum ContentType<T> {

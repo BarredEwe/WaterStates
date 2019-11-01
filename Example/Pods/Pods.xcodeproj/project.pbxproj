@@ -7,62 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0BB4111417FA6A612431B431EB30908D /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB3248DDECC2B3945C9AF7B74C5B50F /* NibLoadable.swift */; };
-		0E1F8A86A77BEF25A317868EA00B3AC0 /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 794D64CA0C09C9A72EFB1979B04CA604 /* EmptyView.xib */; };
-		11C5EC3AC7F935C9FBA00385AA22050E /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C478852386CB7D580210F5B4F8376B /* ErrorView.xib */; };
-		12F97125A6AA28000797788AA7BE07B9 /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 794D64CA0C09C9A72EFB1979B04CA604 /* EmptyView.xib */; };
-		1635219E583B21D97A0B9E28D6977CC3 /* EmptyDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960918D7A58CF044C0A4DDAB38EB1A4 /* EmptyDisplayable.swift */; };
-		27D353376D63C0705707B113EB119FE0 /* ContentDispayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A216774C6D28BE563302B9C31F7AF89 /* ContentDispayable.swift */; };
+		00D49B26768C239C3A44D002D455093B /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 930B2FFA428EAB05D6799BCD365DE241 /* EmptyView.xib */; };
+		02E2F13E0C8620ADA1ADBDB96F88C903 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		06993FACE29A0976CBFC37D5F2E0BCB0 /* Displayable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9622794DA5C5630C1256AB7592F12D4 /* Displayable+Extensions.swift */; };
+		0A8916231A0719DCCDFCD94D9794F136 /* StateActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24A0282A674D96C02614F36084F0482 /* StateActionType.swift */; };
+		0D46A59F5FAF3496F7CE1FC7F52EAAE2 /* ErrorStateStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C663502821CFC3744D6D22C59B24A1 /* ErrorStateStyle.swift */; };
+		0F53105985CCFEC0C557685007ECABB5 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3588BB96333985D452258403F36E1129 /* ErrorView.xib */; };
+		1EB232456F6F86C4AC420B13154D3A48 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA5706BDD687659ECBC1BDE0F2847C8 /* Condition.swift */; };
+		2000779BB921D80466F810C92FC80D55 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83626461DC6328FC23685AAF8F81B35A /* EmptyView.swift */; };
+		21388570B787E1E8F9EB11E98676F888 /* WeakAnyStateDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8712E1174E2BE7F7DF93DBA192C840F /* WeakAnyStateDisplayable.swift */; };
 		29BECDA19DCD1700999EBB72BFCDB48D /* Pods-WaterStates_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC7562A1E63F891DAE438F742F78D571 /* Pods-WaterStates_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3086D7D220C19D8A5BC2E7F9543A83C2 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340CE0B11AC63C48B64A7526214B2292 /* LoadingView.xib */; };
-		394685765E1B2CA5EFEE0E5B39D82E3A /* ContentCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836C9D3A8C19B6688374294F2038C097 /* ContentCondition.swift */; };
-		3E46D486D39211E7EC735E89EFFDC9E7 /* EmptyCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFFE4003BBFE758A2F16FEBEFEA91B /* EmptyCondition.swift */; };
-		4103E7C71D51CB12689711010B58FDA2 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071743AE3348E2FAE86D9A1B837D4D1C /* Condition.swift */; };
-		4B6DEDB098A91035F1A31F79A391A666 /* ErrorStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B304928DDE0D2F9810D081C560C38FB4 /* ErrorStateView.swift */; };
+		2ED04E81BCD3E60C62339B2D59348FE8 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8F4FCD735DFE81BE80DD43DC92338 /* NibLoadable.swift */; };
+		32BF1AE337D7955D5B05BAE86CCEA086 /* LoadingStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0781209004C585CD7B284D88A55DBB /* LoadingStateView.swift */; };
+		3D3F998E51AB1967C2E61953289DF765 /* ErrorCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6749A7F37C48763F0B4E7FA6BB5BF /* ErrorCondition.swift */; };
+		3E50C08EFC90A6947E1805F317848547 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E6955A9CB8A62E10F56C42CFC6CC38D /* LoadingView.xib */; };
+		43AAF68DD31EC07F3D017926E9DD7BBD /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60C09F1E6299380535D3FEC2B95F4F /* ErrorView.swift */; };
+		50D3281C8B762E04B433AD36A8FDCF32 /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C12ACA07DEEA2317B2622C984A986 /* StateMachine.swift */; };
+		50D6FFB7EC0DC8891D29B82ABE76C952 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3588BB96333985D452258403F36E1129 /* ErrorView.xib */; };
 		518614473A3D06ECF01E7C2708472E79 /* Pods-WaterStates_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A58416859E881135717201712C0BD1A /* Pods-WaterStates_Tests-dummy.m */; };
-		529552D3681A32F7FE3786AAC08BA8D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DF1DCAF2BBD1E8EE19C1145CDD1BA12 /* Images.xcassets */; };
-		5F375B7D8184B09B86C3CB535EB788D8 /* DisplaybleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F70D2CEF353D78668A47C4DD6860E0 /* DisplaybleView.swift */; };
-		66D676D0F0EBF2F457EFB478F332A44B /* WeakAnyStateDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2493F2E7E9DA1F5B1001E81746BCEAA /* WeakAnyStateDisplayable.swift */; };
-		683F41A41837E91CB709F61339FF2A0B /* StateActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2586ED469C9A118BFE96F54D22CA13 /* StateActionType.swift */; };
-		6AC82C079C50E4C5883935B8EC4AD663 /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B3FEBEA5335D89299C61628DF7C30B /* StateView.swift */; };
-		732D256B1745483B3F45ECDC36C18888 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C478852386CB7D580210F5B4F8376B /* ErrorView.xib */; };
-		7449B34A5D60565BBA6FE4E866A0617B /* WaterStates-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 180625EB97B744360C8808A6C3D7F1B3 /* WaterStates-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5319F82FF2983A1A8D0DEB4F6096C685 /* EmptyCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD16228A83BBEC68BCB64A4C4896CF8 /* EmptyCondition.swift */; };
+		54B2207CCFA01EEC60F422F7159B0E49 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB625B510BDD06B6C3298366FCCC23 /* EmptyStateView.swift */; };
+		5C7288DB4E4B73AFC5A101B37CE69C8A /* LoadingDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302F605244837C1EADCFF9037CED3768 /* LoadingDisplayable.swift */; };
+		619F47CAD21E36C762C76D94F6B89A90 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A8297D4DE2A25F58CA5F43D941EAA87 /* Images.xcassets */; };
+		62AC53A9BDE0F9F832793A3644C09F07 /* WaterStates+StateDispalyble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D8E15716DEE5295E0CAD299082E9DB /* WaterStates+StateDispalyble.swift */; };
+		6C60D1E1A8BA23A52E7BC84829D23354 /* WaterStates-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7386F349D7C7EFC2E91DA065C0A7AB74 /* WaterStates-dummy.m */; };
+		6DCB1E0F0A3994B82735EBB37397E73A /* WaterStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBB7F170B661DFFC529E3B8B3E4352C /* WaterStates.swift */; };
+		6E8013A9648E524B4E00E304530F89F0 /* LoadingCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30253EF7BDB1E44E3025B2699B1A78FA /* LoadingCondition.swift */; };
+		70AF67372AB54F8B12ABE656327B612C /* WaterStates-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86B08476C7BFC8283F9ED3FBB1B9AE9A /* WaterStates-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73EFBAC05C4755C25E02FA9702003CD3 /* DisplaybleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A344B67FF98F36DDA6D57A674AF221 /* DisplaybleView.swift */; };
 		798118D285AE6C58747B8A5B451A6263 /* Pods-WaterStates_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BD3C3FF211E990C64DC769912E54C7 /* Pods-WaterStates_Example-dummy.m */; };
-		79DC3418EB57EDABA8798C3CE04983D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		856093E2C797E63A0E43B78BF6E41125 /* StateDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D12EB1A903D4F657E87D6A6CB69E7E /* StateDisplayable.swift */; };
-		8988957CBCC0EB6D5CB8FB969C3D9D6C /* LoadingStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AC84368802548C69FCC68EA4F90D09 /* LoadingStateView.swift */; };
-		8ACE3F7D7A5D28777F77ED5BB82FB44A /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B9F7AD8CD76588E448D358C31C559 /* ErrorView.swift */; };
+		8B928CA09247A27856FC5071A27BF163 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E6955A9CB8A62E10F56C42CFC6CC38D /* LoadingView.xib */; };
+		8E799CDF2E4E0B57E36355F65C876042 /* EmptyDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE38A55DCD648294311A1C11F7850053 /* EmptyDisplayable.swift */; };
 		92CC056AAC4648CD7CDEE1444F6B0164 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		991922749D03BC58FE5F66214915B7D8 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BC684D3813CD0FC681ADD5884B1CE8 /* State.swift */; };
-		9A8E62821A098D2F3F589629D10EC9AE /* WaterStatesConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F96A76DBE1DEDE5CC83D33B6ADA90 /* WaterStatesConfig.swift */; };
-		AA7CDDAFFB371224FE7820AABC575E32 /* State+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8882EAE06310D943718D534025616E26 /* State+Extensions.swift */; };
-		AD6A839BA714C6502BDE0E350B994733 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2791595661EF0CE8681BE9830CD9BF9 /* EmptyStateView.swift */; };
-		B12A95AB5E9C7210AABB2F332AE3D234 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134064645D7FFAFEBC96B8A1F96F84F3 /* LoadingView.swift */; };
-		B50B8C9632C235D7853209E584C8FA20 /* WaterStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230DD19596E6481062D9CCA0AAE01CFD /* WaterStates.swift */; };
-		B62A946AAD25482A08C407FE94356B71 /* LoadingCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396EA2BEEFA5B317FCDD15E17D91030 /* LoadingCondition.swift */; };
-		C8650A13F87DFD3F9CE22F29C47E6CF5 /* Displayable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1495004C231E2B6E5E98690C0A7D8FA5 /* Displayable+Extensions.swift */; };
-		CDD20BB5F5523F8FCAF282627273B37A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DF1DCAF2BBD1E8EE19C1145CDD1BA12 /* Images.xcassets */; };
-		DEAC4889BF0BB721C1E527819347D845 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234FE897940FF93675A8BE9975E7F40F /* EmptyView.swift */; };
+		98DAD5B6201740370FB2A8876E4E47EA /* ContentDispayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE42FB04A8FCBD4673F869068F175F69 /* ContentDispayable.swift */; };
+		9DCDC42C88C3C6C083A3B239CF6F912A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A8297D4DE2A25F58CA5F43D941EAA87 /* Images.xcassets */; };
+		A07797F3A610D5CEB56A6EE5A97139AF /* LoadingStateStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D482363851285BF176EE4CA576C8DDEF /* LoadingStateStyle.swift */; };
+		A0B5937AFD9054C022433BC682E5A1A1 /* EmptyStateStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47526896285EAE0F4F8B432A9567C8EA /* EmptyStateStyle.swift */; };
+		BE5BC4F111E72A432CDEC1788633A96C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C823F92D206EDA19928FB6F13D476A /* LoadingView.swift */; };
+		C2244B2E84C56E362298C4ADE3DA9534 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E640B897F060492B2374366A41D7527 /* State.swift */; };
+		C93C3DFE81D09E665B1A483C91224E90 /* ErrorDispayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78608A49D146A3C8419FFAB046A44F05 /* ErrorDispayable.swift */; };
+		CA9FBF8F4651B10C4E2ACC526E885A4A /* State+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A62CA53BA3792E8B590E0BAF20F16 /* State+Extensions.swift */; };
+		D80F1BE64D80FE450837EF0E76384F33 /* ErrorStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995BD541DD417C9176A2E4A7E133A1C /* ErrorStateView.swift */; };
+		DDAD5EC825C9D9D38C9F9687A7F0EF42 /* WaterStates.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 352AA2178808DCDDB9C962A8C38F7126 /* WaterStates.bundle */; };
 		E31792B63C0FB0AEB124CFEA6AB24A55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		E444311B22DABB8F72593BB7487F7882 /* WaterStates.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 352AA2178808DCDDB9C962A8C38F7126 /* WaterStates.bundle */; };
+		EBA0C7E51495051763A61230CA7334FD /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AA97653F9A8B2F40BE7124F1AEA55 /* StateView.swift */; };
+		EBEB011BD320E4035D78C28F6B94E759 /* ContentCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7054EC158146C0B2402C96D93352D4F0 /* ContentCondition.swift */; };
 		F5C351E75BD58F444F40BBA857DA28A0 /* Pods-WaterStates_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FCA6FEB3663BBBBE103770FF43BE14A /* Pods-WaterStates_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6CF85EF72D032F479A4715D022AAB22 /* ErrorDispayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CF1ADD08600D6FBA1088847E0A688 /* ErrorDispayable.swift */; };
-		F71BEA39BCE50C23B27568441E5369E3 /* ErrorCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B95DB6C76E0FEC49C7D93BF1C377C0 /* ErrorCondition.swift */; };
-		F91128299C16722CE0ED3682A35174F4 /* WaterStates-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D352C5C2063F1F3B71A536419580E156 /* WaterStates-dummy.m */; };
-		F94743C84B5D8BF16E111B5CBEDADE13 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340CE0B11AC63C48B64A7526214B2292 /* LoadingView.xib */; };
-		FBD9D4314B472DBCEFD20B0CFCC3ADF9 /* WaterStates+StateDispalyble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BA2DF1FBACB69485009F9A7783D8DB /* WaterStates+StateDispalyble.swift */; };
-		FBE8187B10B035954870B0B9A10FDB29 /* LoadingDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565F4FEE76B8502834118DD9137594C /* LoadingDisplayable.swift */; };
-		FF4CE588C32BE9AFC7F864ABA198DEE5 /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82BBC0892C8A7890608BC9A9D758A7B /* StateMachine.swift */; };
+		F8060F17CC2E1BFB2CBCE4E49094AAED /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 930B2FFA428EAB05D6799BCD365DE241 /* EmptyView.xib */; };
+		FD5A85659F5861D35ABD351B6AA95A79 /* WaterStatesConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8CA4592410C142B06BA1389C9A8BC /* WaterStatesConfig.swift */; };
+		FFFCAF2FEEEE931BDCF413720D6A71DF /* StateDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8932250A3B507FA0AE41209F70A533 /* StateDisplayable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		19FECCD606817404EBA6A2849B8CDA06 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 01E80848363B654A23543D9EB680073A;
-			remoteInfo = "WaterStates-WaterStates";
-		};
 		B12818261AE33334291EDD166B890C75 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -77,72 +73,82 @@
 			remoteGlobalIDString = 3C65A763063B3FA62508609068353B23;
 			remoteInfo = "Pods-WaterStates_Example";
 		};
+		EE7C8C3A86B0F1EE69723C7172426688 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01E80848363B654A23543D9EB680073A;
+			remoteInfo = "WaterStates-WaterStates";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00A6B513F59EC1696098FF206AB6D2CE /* Pods_WaterStates_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WaterStates_Example.framework; path = "Pods-WaterStates_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		044FA91A27619E0EFA9B9085E74BBD25 /* Pods-WaterStates_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WaterStates_Example-frameworks.sh"; sourceTree = "<group>"; };
-		071743AE3348E2FAE86D9A1B837D4D1C /* Condition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
+		081337397CBADAC99F10A79132B0D025 /* WaterStates-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WaterStates-Info.plist"; sourceTree = "<group>"; };
+		0B6DF4A0F1BE6A52095078BDEA36440E /* WaterStates.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WaterStates.xcconfig; sourceTree = "<group>"; };
 		0BA3F3227A6E8DFE55CE16D4880D7F01 /* WaterStates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WaterStates.framework; path = WaterStates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CC807FDBB871B7CE0DED74882350E89 /* WaterStates-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WaterStates-Info.plist"; sourceTree = "<group>"; };
 		118BB0A7B5FA05E5A11238825D89239F /* Pods-WaterStates_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterStates_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		12B95DB6C76E0FEC49C7D93BF1C377C0 /* ErrorCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorCondition.swift; sourceTree = "<group>"; };
-		134064645D7FFAFEBC96B8A1F96F84F3 /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		1495004C231E2B6E5E98690C0A7D8FA5 /* Displayable+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Displayable+Extensions.swift"; sourceTree = "<group>"; };
-		180625EB97B744360C8808A6C3D7F1B3 /* WaterStates-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaterStates-umbrella.h"; sourceTree = "<group>"; };
-		22AC84368802548C69FCC68EA4F90D09 /* LoadingStateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingStateView.swift; sourceTree = "<group>"; };
-		230DD19596E6481062D9CCA0AAE01CFD /* WaterStates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WaterStates.swift; sourceTree = "<group>"; };
-		234FE897940FF93675A8BE9975E7F40F /* EmptyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
-		24C478852386CB7D580210F5B4F8376B /* ErrorView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ErrorView.xib; path = WaterStates/Assets/ErrorView.xib; sourceTree = "<group>"; };
-		2565F4FEE76B8502834118DD9137594C /* LoadingDisplayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingDisplayable.swift; sourceTree = "<group>"; };
-		2960918D7A58CF044C0A4DDAB38EB1A4 /* EmptyDisplayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmptyDisplayable.swift; sourceTree = "<group>"; };
+		119AA97653F9A8B2F40BE7124F1AEA55 /* StateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
+		18A344B67FF98F36DDA6D57A674AF221 /* DisplaybleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisplaybleView.swift; sourceTree = "<group>"; };
+		247F68A5F8E43972739FF88C16CD5F05 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		2CB62A1A72CD8251FAA3079B50B1FB95 /* Pods-WaterStates_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WaterStates_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		30253EF7BDB1E44E3025B2699B1A78FA /* LoadingCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingCondition.swift; sourceTree = "<group>"; };
+		302F605244837C1EADCFF9037CED3768 /* LoadingDisplayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingDisplayable.swift; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3396EA2BEEFA5B317FCDD15E17D91030 /* LoadingCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingCondition.swift; sourceTree = "<group>"; };
-		340CE0B11AC63C48B64A7526214B2292 /* LoadingView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoadingView.xib; path = WaterStates/Assets/LoadingView.xib; sourceTree = "<group>"; };
 		352AA2178808DCDDB9C962A8C38F7126 /* WaterStates.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = WaterStates.bundle; path = "WaterStates-WaterStates.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3588BB96333985D452258403F36E1129 /* ErrorView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ErrorView.xib; path = WaterStates/Assets/ErrorView.xib; sourceTree = "<group>"; };
 		3682DD3D8321D72C242F0FC7E160D753 /* Pods-WaterStates_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WaterStates_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		45BA2DF1FBACB69485009F9A7783D8DB /* WaterStates+StateDispalyble.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "WaterStates+StateDispalyble.swift"; sourceTree = "<group>"; };
-		46D12EB1A903D4F657E87D6A6CB69E7E /* StateDisplayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StateDisplayable.swift; sourceTree = "<group>"; };
+		3794FEDC47CB489C28711ABD32BDD795 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		460AB8EE025B71DA9E2F039646478C98 /* WaterStates-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaterStates-prefix.pch"; sourceTree = "<group>"; };
+		47526896285EAE0F4F8B432A9567C8EA /* EmptyStateStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmptyStateStyle.swift; sourceTree = "<group>"; };
 		4A58416859E881135717201712C0BD1A /* Pods-WaterStates_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WaterStates_Tests-dummy.m"; sourceTree = "<group>"; };
-		4E2586ED469C9A118BFE96F54D22CA13 /* StateActionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StateActionType.swift; sourceTree = "<group>"; };
 		4FC07721B2F0B23293C7B9406D1B3537 /* Pods-WaterStates_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WaterStates_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		50B3FEBEA5335D89299C61628DF7C30B /* StateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
-		52BC684D3813CD0FC681ADD5884B1CE8 /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		4FD16228A83BBEC68BCB64A4C4896CF8 /* EmptyCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmptyCondition.swift; sourceTree = "<group>"; };
 		59B1E37F99166BD1E83965CB05776DB3 /* Pods-WaterStates_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WaterStates_Tests.modulemap"; sourceTree = "<group>"; };
-		63F70D2CEF353D78668A47C4DD6860E0 /* DisplaybleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisplaybleView.swift; sourceTree = "<group>"; };
-		6B98E2D4C81A9B91742CCFB2451346E1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6DBB7F170B661DFFC529E3B8B3E4352C /* WaterStates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WaterStates.swift; sourceTree = "<group>"; };
+		6E6955A9CB8A62E10F56C42CFC6CC38D /* LoadingView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoadingView.xib; path = WaterStates/Assets/LoadingView.xib; sourceTree = "<group>"; };
+		7054EC158146C0B2402C96D93352D4F0 /* ContentCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentCondition.swift; sourceTree = "<group>"; };
+		7386F349D7C7EFC2E91DA065C0A7AB74 /* WaterStates-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WaterStates-dummy.m"; sourceTree = "<group>"; };
 		74E2EF672FA2730504E9D31CE1B273A7 /* Pods-WaterStates_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WaterStates_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7686F6E2ECBDAB943DCF9C8363A41A9E /* Pods-WaterStates_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterStates_Example.release.xcconfig"; sourceTree = "<group>"; };
-		794D64CA0C09C9A72EFB1979B04CA604 /* EmptyView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = EmptyView.xib; path = WaterStates/Assets/EmptyView.xib; sourceTree = "<group>"; };
-		7DF1DCAF2BBD1E8EE19C1145CDD1BA12 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = WaterStates/Assets/Images.xcassets; sourceTree = "<group>"; };
-		836C9D3A8C19B6688374294F2038C097 /* ContentCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentCondition.swift; sourceTree = "<group>"; };
-		8882EAE06310D943718D534025616E26 /* State+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "State+Extensions.swift"; sourceTree = "<group>"; };
+		78608A49D146A3C8419FFAB046A44F05 /* ErrorDispayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorDispayable.swift; sourceTree = "<group>"; };
+		7A8297D4DE2A25F58CA5F43D941EAA87 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = WaterStates/Assets/Images.xcassets; sourceTree = "<group>"; };
+		7D7A62CA53BA3792E8B590E0BAF20F16 /* State+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "State+Extensions.swift"; sourceTree = "<group>"; };
+		83626461DC6328FC23685AAF8F81B35A /* EmptyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		86B08476C7BFC8283F9ED3FBB1B9AE9A /* WaterStates-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaterStates-umbrella.h"; sourceTree = "<group>"; };
+		8C5C12ACA07DEEA2317B2622C984A986 /* StateMachine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
 		8FCA6FEB3663BBBBE103770FF43BE14A /* Pods-WaterStates_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WaterStates_Tests-umbrella.h"; sourceTree = "<group>"; };
-		96E19CCBB01AFFBDD47D6C9BC1DAA7F9 /* WaterStates-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaterStates-prefix.pch"; sourceTree = "<group>"; };
-		99FEE21DAF19E802B6F786180FCF4724 /* WaterStates.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WaterStates.modulemap; sourceTree = "<group>"; };
-		9A216774C6D28BE563302B9C31F7AF89 /* ContentDispayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentDispayable.swift; sourceTree = "<group>"; };
-		9A8CF1ADD08600D6FBA1088847E0A688 /* ErrorDispayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorDispayable.swift; sourceTree = "<group>"; };
+		930B2FFA428EAB05D6799BCD365DE241 /* EmptyView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = EmptyView.xib; path = WaterStates/Assets/EmptyView.xib; sourceTree = "<group>"; };
+		9C786B96812B9E98E76D7F944900BA0D /* WaterStates.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WaterStates.modulemap; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E640B897F060492B2374366A41D7527 /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		A1BD3C3FF211E990C64DC769912E54C7 /* Pods-WaterStates_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WaterStates_Example-dummy.m"; sourceTree = "<group>"; };
-		A6CF866E60CE0BE12219FBD9E292FEBA /* WaterStates.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WaterStates.xcconfig; sourceTree = "<group>"; };
-		A82BBC0892C8A7890608BC9A9D758A7B /* StateMachine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
+		A2C823F92D206EDA19928FB6F13D476A /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		A4A8CA4592410C142B06BA1389C9A8BC /* WaterStatesConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WaterStatesConfig.swift; sourceTree = "<group>"; };
+		A5D6749A7F37C48763F0B4E7FA6BB5BF /* ErrorCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorCondition.swift; sourceTree = "<group>"; };
+		ADDB625B510BDD06B6C3298366FCCC23 /* EmptyStateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		AE42FB04A8FCBD4673F869068F175F69 /* ContentDispayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentDispayable.swift; sourceTree = "<group>"; };
 		AF2C0301FE65F2844CE320B75EA979E2 /* Pods-WaterStates_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterStates_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B304928DDE0D2F9810D081C560C38FB4 /* ErrorStateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorStateView.swift; sourceTree = "<group>"; };
-		BAB3248DDECC2B3945C9AF7B74C5B50F /* NibLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		BAA5706BDD687659ECBC1BDE0F2847C8 /* Condition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
 		BB2938E64C6C2B90EB4A8A593B1F64FF /* Pods-WaterStates_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WaterStates_Example-Info.plist"; sourceTree = "<group>"; };
+		BE38A55DCD648294311A1C11F7850053 /* EmptyDisplayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmptyDisplayable.swift; sourceTree = "<group>"; };
 		BF23A65553092DD33CC485A9B1388B42 /* Pods-WaterStates_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WaterStates_Tests-Info.plist"; sourceTree = "<group>"; };
 		C119A3DEA88432BFBB1A3D553CE7C949 /* Pods_WaterStates_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WaterStates_Tests.framework; path = "Pods-WaterStates_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2493F2E7E9DA1F5B1001E81746BCEAA /* WeakAnyStateDisplayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeakAnyStateDisplayable.swift; sourceTree = "<group>"; };
-		C6DFFE4003BBFE758A2F16FEBEFEA91B /* EmptyCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmptyCondition.swift; sourceTree = "<group>"; };
-		C8EE8BED1FA6673919DD7B6293B3E21F /* ResourceBundle-WaterStates-WaterStates-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-WaterStates-WaterStates-Info.plist"; sourceTree = "<group>"; };
-		CE2F96A76DBE1DEDE5CC83D33B6ADA90 /* WaterStatesConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WaterStatesConfig.swift; sourceTree = "<group>"; };
-		D352C5C2063F1F3B71A536419580E156 /* WaterStates-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WaterStates-dummy.m"; sourceTree = "<group>"; };
-		DAC4BB4556925341530DE3253A411135 /* WaterStates.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WaterStates.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		EFC04F39396DDF7DEDA99504D5DD35A8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		F2791595661EF0CE8681BE9830CD9BF9 /* EmptyStateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		C1D8E15716DEE5295E0CAD299082E9DB /* WaterStates+StateDispalyble.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "WaterStates+StateDispalyble.swift"; sourceTree = "<group>"; };
+		C691BAB91041178EB48EA1B2DC180167 /* ResourceBundle-WaterStates-WaterStates-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-WaterStates-WaterStates-Info.plist"; sourceTree = "<group>"; };
+		CB0781209004C585CD7B284D88A55DBB /* LoadingStateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingStateView.swift; sourceTree = "<group>"; };
+		CE8932250A3B507FA0AE41209F70A533 /* StateDisplayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StateDisplayable.swift; sourceTree = "<group>"; };
+		D482363851285BF176EE4CA576C8DDEF /* LoadingStateStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingStateStyle.swift; sourceTree = "<group>"; };
+		D8C663502821CFC3744D6D22C59B24A1 /* ErrorStateStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorStateStyle.swift; sourceTree = "<group>"; };
+		D995BD541DD417C9176A2E4A7E133A1C /* ErrorStateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorStateView.swift; sourceTree = "<group>"; };
+		DAE42736D34F302684AF73340584EC03 /* WaterStates.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WaterStates.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E8712E1174E2BE7F7DF93DBA192C840F /* WeakAnyStateDisplayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeakAnyStateDisplayable.swift; sourceTree = "<group>"; };
+		F24A0282A674D96C02614F36084F0482 /* StateActionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StateActionType.swift; sourceTree = "<group>"; };
+		F2B8F4FCD735DFE81BE80DD43DC92338 /* NibLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		F2DECA47C6D33325B9F01E417EB82DEB /* Pods-WaterStates_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterStates_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FA2B9F7AD8CD76588E448D358C31C559 /* ErrorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		F9622794DA5C5630C1256AB7592F12D4 /* Displayable+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Displayable+Extensions.swift"; sourceTree = "<group>"; };
+		FB60C09F1E6299380535D3FEC2B95F4F /* ErrorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		FC7562A1E63F891DAE438F742F78D571 /* Pods-WaterStates_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WaterStates_Example-umbrella.h"; sourceTree = "<group>"; };
 		FD1F1007F0BD5BDE6E3AA858867C2CE8 /* Pods-WaterStates_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WaterStates_Example.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,11 +162,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7FEE2A8A8E13F6C33BDF425F5C661DF2 /* Frameworks */ = {
+		6CED397C197F8B75C51356C82E1AEAF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79DC3418EB57EDABA8798C3CE04983D7 /* Foundation.framework in Frameworks */,
+				02E2F13E0C8620ADA1ADBDB96F88C903 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +178,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A51384834160EAAEC3D74CAC5E3E4E9D /* Frameworks */ = {
+		D83D81E1EBF28FB936646522072DA759 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -182,86 +188,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00EBDE8337E10B264FF84AF5D28C2535 /* WaterStates */ = {
+		03EE6363C21B1D56D0FFD263430B6AF8 /* WaterStates */ = {
 			isa = PBXGroup;
 			children = (
-				63F70D2CEF353D78668A47C4DD6860E0 /* DisplaybleView.swift */,
-				BAB3248DDECC2B3945C9AF7B74C5B50F /* NibLoadable.swift */,
-				4E2586ED469C9A118BFE96F54D22CA13 /* StateActionType.swift */,
-				230DD19596E6481062D9CCA0AAE01CFD /* WaterStates.swift */,
-				45BA2DF1FBACB69485009F9A7783D8DB /* WaterStates+StateDispalyble.swift */,
-			);
-			name = WaterStates;
-			path = WaterStates/Classes/WaterStates;
-			sourceTree = "<group>";
-		};
-		211D071AEC900A43B069E00B966DA402 /* WaterStates */ = {
-			isa = PBXGroup;
-			children = (
-				AEA3A596064E7F4BD0ECBCE1027015F2 /* Condition */,
-				8402B66920F3BA79B54E6412C18E800C /* Configs */,
-				D8054CEBBFF31660C9E0CA2449CB30E4 /* DefaultViews */,
-				61D5C53A61938F746E9122F40A968172 /* Displayable */,
-				9A75CCA76D07CFE9CE8ACBCA7BAB7163 /* Pod */,
-				F6A3647CC5D615E74274A0A92318E45B /* Resources */,
-				C15787EE91ED76AE0A34ACD5757D8814 /* State */,
-				43A4C3AA36BDB58B00EA32719A7F83FB /* StateMachine */,
-				D9F89F26045B0BF2F3DFC74837CEB596 /* StateViews */,
-				3777AF72DDC6BDBA07E7C407212E08EF /* Support Files */,
-				00EBDE8337E10B264FF84AF5D28C2535 /* WaterStates */,
+				1E76D5A2B874209B9829F4CF38D8BD52 /* Condition */,
+				BF5A85A0DD954A0F61CD26988674CE6F /* Configs */,
+				B11A3F8140DEDCC4E47F658886C5B861 /* DefaultViews */,
+				B4E9B99090E91FFD0AD825E585B7735E /* Displayable */,
+				5C871EFDAD14E3FF4767BC7A8B4A9FC1 /* Pod */,
+				5F5A85B9D23396B0962C84810004749B /* Resources */,
+				CD87B835679CA91EF07A42EAE40A3D99 /* State */,
+				64128C07156E1C1FE0C9D3C332AB86FE /* StateMachine */,
+				B00447776DB5963DFC0D9B5466AE9F96 /* StateViews */,
+				EBB8CC3656EB7F3B799392BDF0CF6911 /* StateViewsStyles */,
+				8E4CFAE2C8BA799AB00ECA3D4C0E8FB2 /* Support Files */,
+				94E2A7DB210920B017362C7A25336F6A /* WaterStates */,
 			);
 			name = WaterStates;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		2A50179938B54CB3FC56D8679FA1605E /* ConcreteStateView */ = {
+		1E76D5A2B874209B9829F4CF38D8BD52 /* Condition */ = {
 			isa = PBXGroup;
 			children = (
-				F2791595661EF0CE8681BE9830CD9BF9 /* EmptyStateView.swift */,
-				B304928DDE0D2F9810D081C560C38FB4 /* ErrorStateView.swift */,
-				22AC84368802548C69FCC68EA4F90D09 /* LoadingStateView.swift */,
+				BAA5706BDD687659ECBC1BDE0F2847C8 /* Condition.swift */,
+				AE81C360AC609CA2C31F5B122ADFF2AC /* ConcreteConditions */,
 			);
-			name = ConcreteStateView;
-			path = ConcreteStateView;
+			name = Condition;
+			path = WaterStates/Classes/Condition;
 			sourceTree = "<group>";
 		};
-		3777AF72DDC6BDBA07E7C407212E08EF /* Support Files */ = {
+		5C871EFDAD14E3FF4767BC7A8B4A9FC1 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				C8EE8BED1FA6673919DD7B6293B3E21F /* ResourceBundle-WaterStates-WaterStates-Info.plist */,
-				99FEE21DAF19E802B6F786180FCF4724 /* WaterStates.modulemap */,
-				A6CF866E60CE0BE12219FBD9E292FEBA /* WaterStates.xcconfig */,
-				D352C5C2063F1F3B71A536419580E156 /* WaterStates-dummy.m */,
-				0CC807FDBB871B7CE0DED74882350E89 /* WaterStates-Info.plist */,
-				96E19CCBB01AFFBDD47D6C9BC1DAA7F9 /* WaterStates-prefix.pch */,
-				180625EB97B744360C8808A6C3D7F1B3 /* WaterStates-umbrella.h */,
+				3794FEDC47CB489C28711ABD32BDD795 /* LICENSE */,
+				247F68A5F8E43972739FF88C16CD5F05 /* README.md */,
+				DAE42736D34F302684AF73340584EC03 /* WaterStates.podspec */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/WaterStates";
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		43A4C3AA36BDB58B00EA32719A7F83FB /* StateMachine */ = {
+		5F5A85B9D23396B0962C84810004749B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A82BBC0892C8A7890608BC9A9D758A7B /* StateMachine.swift */,
+				930B2FFA428EAB05D6799BCD365DE241 /* EmptyView.xib */,
+				3588BB96333985D452258403F36E1129 /* ErrorView.xib */,
+				7A8297D4DE2A25F58CA5F43D941EAA87 /* Images.xcassets */,
+				6E6955A9CB8A62E10F56C42CFC6CC38D /* LoadingView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		64128C07156E1C1FE0C9D3C332AB86FE /* StateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				8C5C12ACA07DEEA2317B2622C984A986 /* StateMachine.swift */,
 			);
 			name = StateMachine;
 			path = WaterStates/Classes/StateMachine;
-			sourceTree = "<group>";
-		};
-		61D5C53A61938F746E9122F40A968172 /* Displayable */ = {
-			isa = PBXGroup;
-			children = (
-				9A216774C6D28BE563302B9C31F7AF89 /* ContentDispayable.swift */,
-				1495004C231E2B6E5E98690C0A7D8FA5 /* Displayable+Extensions.swift */,
-				2960918D7A58CF044C0A4DDAB38EB1A4 /* EmptyDisplayable.swift */,
-				9A8CF1ADD08600D6FBA1088847E0A688 /* ErrorDispayable.swift */,
-				2565F4FEE76B8502834118DD9137594C /* LoadingDisplayable.swift */,
-				46D12EB1A903D4F657E87D6A6CB69E7E /* StateDisplayable.swift */,
-				C2493F2E7E9DA1F5B1001E81746BCEAA /* WeakAnyStateDisplayable.swift */,
-			);
-			name = Displayable;
-			path = WaterStates/Classes/Displayable;
 			sourceTree = "<group>";
 		};
 		694D248B283981F5E8031DD99C1DC038 /* Pods-WaterStates_Tests */ = {
@@ -297,13 +281,12 @@
 			path = "Target Support Files/Pods-WaterStates_Example";
 			sourceTree = "<group>";
 		};
-		8402B66920F3BA79B54E6412C18E800C /* Configs */ = {
+		8A174DA0DE8B5EBB4D45774A8D4731E4 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CE2F96A76DBE1DEDE5CC83D33B6ADA90 /* WaterStatesConfig.swift */,
+				03EE6363C21B1D56D0FFD263430B6AF8 /* WaterStates */,
 			);
-			name = Configs;
-			path = WaterStates/Classes/Configs;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		8B27521347596926375B2B370AEFD883 /* Products */ = {
@@ -326,36 +309,89 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9A75CCA76D07CFE9CE8ACBCA7BAB7163 /* Pod */ = {
+		8E4CFAE2C8BA799AB00ECA3D4C0E8FB2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EFC04F39396DDF7DEDA99504D5DD35A8 /* LICENSE */,
-				6B98E2D4C81A9B91742CCFB2451346E1 /* README.md */,
-				DAC4BB4556925341530DE3253A411135 /* WaterStates.podspec */,
+				C691BAB91041178EB48EA1B2DC180167 /* ResourceBundle-WaterStates-WaterStates-Info.plist */,
+				9C786B96812B9E98E76D7F944900BA0D /* WaterStates.modulemap */,
+				0B6DF4A0F1BE6A52095078BDEA36440E /* WaterStates.xcconfig */,
+				7386F349D7C7EFC2E91DA065C0A7AB74 /* WaterStates-dummy.m */,
+				081337397CBADAC99F10A79132B0D025 /* WaterStates-Info.plist */,
+				460AB8EE025B71DA9E2F039646478C98 /* WaterStates-prefix.pch */,
+				86B08476C7BFC8283F9ED3FBB1B9AE9A /* WaterStates-umbrella.h */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WaterStates";
 			sourceTree = "<group>";
 		};
-		AEA3A596064E7F4BD0ECBCE1027015F2 /* Condition */ = {
+		94E2A7DB210920B017362C7A25336F6A /* WaterStates */ = {
 			isa = PBXGroup;
 			children = (
-				071743AE3348E2FAE86D9A1B837D4D1C /* Condition.swift */,
-				BEA38225712C68844390157C48309B9E /* ConcreteConditions */,
+				18A344B67FF98F36DDA6D57A674AF221 /* DisplaybleView.swift */,
+				F2B8F4FCD735DFE81BE80DD43DC92338 /* NibLoadable.swift */,
+				F24A0282A674D96C02614F36084F0482 /* StateActionType.swift */,
+				6DBB7F170B661DFFC529E3B8B3E4352C /* WaterStates.swift */,
+				C1D8E15716DEE5295E0CAD299082E9DB /* WaterStates+StateDispalyble.swift */,
 			);
-			name = Condition;
-			path = WaterStates/Classes/Condition;
+			name = WaterStates;
+			path = WaterStates/Classes/WaterStates;
 			sourceTree = "<group>";
 		};
-		BEA38225712C68844390157C48309B9E /* ConcreteConditions */ = {
+		AE81C360AC609CA2C31F5B122ADFF2AC /* ConcreteConditions */ = {
 			isa = PBXGroup;
 			children = (
-				836C9D3A8C19B6688374294F2038C097 /* ContentCondition.swift */,
-				C6DFFE4003BBFE758A2F16FEBEFEA91B /* EmptyCondition.swift */,
-				12B95DB6C76E0FEC49C7D93BF1C377C0 /* ErrorCondition.swift */,
-				3396EA2BEEFA5B317FCDD15E17D91030 /* LoadingCondition.swift */,
+				7054EC158146C0B2402C96D93352D4F0 /* ContentCondition.swift */,
+				4FD16228A83BBEC68BCB64A4C4896CF8 /* EmptyCondition.swift */,
+				A5D6749A7F37C48763F0B4E7FA6BB5BF /* ErrorCondition.swift */,
+				30253EF7BDB1E44E3025B2699B1A78FA /* LoadingCondition.swift */,
 			);
 			name = ConcreteConditions;
 			path = ConcreteConditions;
+			sourceTree = "<group>";
+		};
+		B00447776DB5963DFC0D9B5466AE9F96 /* StateViews */ = {
+			isa = PBXGroup;
+			children = (
+				119AA97653F9A8B2F40BE7124F1AEA55 /* StateView.swift */,
+				E4E251C27DAFB076A89916FA86D82CFB /* ConcreteStateView */,
+			);
+			name = StateViews;
+			path = WaterStates/Classes/StateViews;
+			sourceTree = "<group>";
+		};
+		B11A3F8140DEDCC4E47F658886C5B861 /* DefaultViews */ = {
+			isa = PBXGroup;
+			children = (
+				83626461DC6328FC23685AAF8F81B35A /* EmptyView.swift */,
+				FB60C09F1E6299380535D3FEC2B95F4F /* ErrorView.swift */,
+				A2C823F92D206EDA19928FB6F13D476A /* LoadingView.swift */,
+			);
+			name = DefaultViews;
+			path = WaterStates/Classes/DefaultViews;
+			sourceTree = "<group>";
+		};
+		B4E9B99090E91FFD0AD825E585B7735E /* Displayable */ = {
+			isa = PBXGroup;
+			children = (
+				AE42FB04A8FCBD4673F869068F175F69 /* ContentDispayable.swift */,
+				F9622794DA5C5630C1256AB7592F12D4 /* Displayable+Extensions.swift */,
+				BE38A55DCD648294311A1C11F7850053 /* EmptyDisplayable.swift */,
+				78608A49D146A3C8419FFAB046A44F05 /* ErrorDispayable.swift */,
+				302F605244837C1EADCFF9037CED3768 /* LoadingDisplayable.swift */,
+				CE8932250A3B507FA0AE41209F70A533 /* StateDisplayable.swift */,
+				E8712E1174E2BE7F7DF93DBA192C840F /* WeakAnyStateDisplayable.swift */,
+			);
+			name = Displayable;
+			path = WaterStates/Classes/Displayable;
+			sourceTree = "<group>";
+		};
+		BF5A85A0DD954A0F61CD26988674CE6F /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				A4A8CA4592410C142B06BA1389C9A8BC /* WaterStatesConfig.swift */,
+			);
+			name = Configs;
+			path = WaterStates/Classes/Configs;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -366,29 +402,21 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C15787EE91ED76AE0A34ACD5757D8814 /* State */ = {
+		CD87B835679CA91EF07A42EAE40A3D99 /* State */ = {
 			isa = PBXGroup;
 			children = (
-				52BC684D3813CD0FC681ADD5884B1CE8 /* State.swift */,
-				8882EAE06310D943718D534025616E26 /* State+Extensions.swift */,
+				9E640B897F060492B2374366A41D7527 /* State.swift */,
+				7D7A62CA53BA3792E8B590E0BAF20F16 /* State+Extensions.swift */,
 			);
 			name = State;
 			path = WaterStates/Classes/State;
-			sourceTree = "<group>";
-		};
-		C53DB2DEE24155F9F548A64FCB7139EE /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				211D071AEC900A43B069E00B966DA402 /* WaterStates */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				C53DB2DEE24155F9F548A64FCB7139EE /* Development Pods */,
+				8A174DA0DE8B5EBB4D45774A8D4731E4 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				8B27521347596926375B2B370AEFD883 /* Products */,
 				8E431CE65F054BDC7AA4F8CBA3557B2B /* Targets Support Files */,
@@ -403,46 +431,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D8054CEBBFF31660C9E0CA2449CB30E4 /* DefaultViews */ = {
+		E4E251C27DAFB076A89916FA86D82CFB /* ConcreteStateView */ = {
 			isa = PBXGroup;
 			children = (
-				234FE897940FF93675A8BE9975E7F40F /* EmptyView.swift */,
-				FA2B9F7AD8CD76588E448D358C31C559 /* ErrorView.swift */,
-				134064645D7FFAFEBC96B8A1F96F84F3 /* LoadingView.swift */,
+				ADDB625B510BDD06B6C3298366FCCC23 /* EmptyStateView.swift */,
+				D995BD541DD417C9176A2E4A7E133A1C /* ErrorStateView.swift */,
+				CB0781209004C585CD7B284D88A55DBB /* LoadingStateView.swift */,
 			);
-			name = DefaultViews;
-			path = WaterStates/Classes/DefaultViews;
+			name = ConcreteStateView;
+			path = ConcreteStateView;
 			sourceTree = "<group>";
 		};
-		D9F89F26045B0BF2F3DFC74837CEB596 /* StateViews */ = {
+		EBB8CC3656EB7F3B799392BDF0CF6911 /* StateViewsStyles */ = {
 			isa = PBXGroup;
 			children = (
-				50B3FEBEA5335D89299C61628DF7C30B /* StateView.swift */,
-				2A50179938B54CB3FC56D8679FA1605E /* ConcreteStateView */,
+				47526896285EAE0F4F8B432A9567C8EA /* EmptyStateStyle.swift */,
+				D8C663502821CFC3744D6D22C59B24A1 /* ErrorStateStyle.swift */,
+				D482363851285BF176EE4CA576C8DDEF /* LoadingStateStyle.swift */,
 			);
-			name = StateViews;
-			path = WaterStates/Classes/StateViews;
-			sourceTree = "<group>";
-		};
-		F6A3647CC5D615E74274A0A92318E45B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				794D64CA0C09C9A72EFB1979B04CA604 /* EmptyView.xib */,
-				24C478852386CB7D580210F5B4F8376B /* ErrorView.xib */,
-				7DF1DCAF2BBD1E8EE19C1145CDD1BA12 /* Images.xcassets */,
-				340CE0B11AC63C48B64A7526214B2292 /* LoadingView.xib */,
-			);
-			name = Resources;
+			name = StateViewsStyles;
+			path = WaterStates/Classes/StateViewsStyles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		112E64CD021F469F9D8C53203B360F8C /* Headers */ = {
+		1EED7589EFE89FB9E563D5DF20090A7F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7449B34A5D60565BBA6FE4E866A0617B /* WaterStates-umbrella.h in Headers */,
+				70AF67372AB54F8B12ABE656327B612C /* WaterStates-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,11 +485,11 @@
 /* Begin PBXNativeTarget section */
 		01E80848363B654A23543D9EB680073A /* WaterStates-WaterStates */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 960831747495DC3C2DF40D79DAA0A3B5 /* Build configuration list for PBXNativeTarget "WaterStates-WaterStates" */;
+			buildConfigurationList = 5A178DE5EAF95B36CE7E9D16BE2CCFAB /* Build configuration list for PBXNativeTarget "WaterStates-WaterStates" */;
 			buildPhases = (
-				2123C0D1BFAFDEED4660A337F8D33F27 /* Sources */,
-				A51384834160EAAEC3D74CAC5E3E4E9D /* Frameworks */,
-				D47578048B20F90089EA8B00848D3B61 /* Resources */,
+				3BA30B251706E1E0556D3038CB324A92 /* Sources */,
+				D83D81E1EBF28FB936646522072DA759 /* Frameworks */,
+				402347EE4BD55214CDD803F39CBEDFBC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -503,17 +521,17 @@
 		};
 		59A3B751E00A87DEA0D21D0C383DDC13 /* WaterStates */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E13702FB67D8D95F6D4215D49A8EB243 /* Build configuration list for PBXNativeTarget "WaterStates" */;
+			buildConfigurationList = F0D65AB031E52287F710A2AE5C6E641E /* Build configuration list for PBXNativeTarget "WaterStates" */;
 			buildPhases = (
-				112E64CD021F469F9D8C53203B360F8C /* Headers */,
-				88D4CB9F5BC85962F188F6B1B31B7370 /* Sources */,
-				7FEE2A8A8E13F6C33BDF425F5C661DF2 /* Frameworks */,
-				2CED818B67390EE0FC39100C0CFE5C8C /* Resources */,
+				1EED7589EFE89FB9E563D5DF20090A7F /* Headers */,
+				E9F623DCABB93C2278ED6D35B21CA928 /* Sources */,
+				6CED397C197F8B75C51356C82E1AEAF7 /* Frameworks */,
+				83BD67AB7C572F548AA71FF0344BC785 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				819C150ED0A80478D0EE12A4DF3AEB43 /* PBXTargetDependency */,
+				1E738CA15F22E21E0657FB12BF18DEB7 /* PBXTargetDependency */,
 			);
 			name = WaterStates;
 			productName = WaterStates;
@@ -570,22 +588,33 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2CED818B67390EE0FC39100C0CFE5C8C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0E1F8A86A77BEF25A317868EA00B3AC0 /* EmptyView.xib in Resources */,
-				11C5EC3AC7F935C9FBA00385AA22050E /* ErrorView.xib in Resources */,
-				529552D3681A32F7FE3786AAC08BA8D0 /* Images.xcassets in Resources */,
-				F94743C84B5D8BF16E111B5CBEDADE13 /* LoadingView.xib in Resources */,
-				E444311B22DABB8F72593BB7487F7882 /* WaterStates.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3A53F0F341590472C21BF957E1585262 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		402347EE4BD55214CDD803F39CBEDFBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D49B26768C239C3A44D002D455093B /* EmptyView.xib in Resources */,
+				0F53105985CCFEC0C557685007ECABB5 /* ErrorView.xib in Resources */,
+				619F47CAD21E36C762C76D94F6B89A90 /* Images.xcassets in Resources */,
+				8B928CA09247A27856FC5071A27BF163 /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83BD67AB7C572F548AA71FF0344BC785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8060F17CC2E1BFB2CBCE4E49094AAED /* EmptyView.xib in Resources */,
+				50D6FFB7EC0DC8891D29B82ABE76C952 /* ErrorView.xib in Resources */,
+				9DCDC42C88C3C6C083A3B239CF6F912A /* Images.xcassets in Resources */,
+				3E50C08EFC90A6947E1805F317848547 /* LoadingView.xib in Resources */,
+				DDAD5EC825C9D9D38C9F9687A7F0EF42 /* WaterStates.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,21 +625,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D47578048B20F90089EA8B00848D3B61 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				12F97125A6AA28000797788AA7BE07B9 /* EmptyView.xib in Resources */,
-				732D256B1745483B3F45ECDC36C18888 /* ErrorView.xib in Resources */,
-				CDD20BB5F5523F8FCAF282627273B37A /* Images.xcassets in Resources */,
-				3086D7D220C19D8A5BC2E7F9543A83C2 /* LoadingView.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2123C0D1BFAFDEED4660A337F8D33F27 /* Sources */ = {
+		3BA30B251706E1E0556D3038CB324A92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -633,39 +651,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88D4CB9F5BC85962F188F6B1B31B7370 /* Sources */ = {
+		E9F623DCABB93C2278ED6D35B21CA928 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4103E7C71D51CB12689711010B58FDA2 /* Condition.swift in Sources */,
-				394685765E1B2CA5EFEE0E5B39D82E3A /* ContentCondition.swift in Sources */,
-				27D353376D63C0705707B113EB119FE0 /* ContentDispayable.swift in Sources */,
-				C8650A13F87DFD3F9CE22F29C47E6CF5 /* Displayable+Extensions.swift in Sources */,
-				5F375B7D8184B09B86C3CB535EB788D8 /* DisplaybleView.swift in Sources */,
-				3E46D486D39211E7EC735E89EFFDC9E7 /* EmptyCondition.swift in Sources */,
-				1635219E583B21D97A0B9E28D6977CC3 /* EmptyDisplayable.swift in Sources */,
-				AD6A839BA714C6502BDE0E350B994733 /* EmptyStateView.swift in Sources */,
-				DEAC4889BF0BB721C1E527819347D845 /* EmptyView.swift in Sources */,
-				F71BEA39BCE50C23B27568441E5369E3 /* ErrorCondition.swift in Sources */,
-				F6CF85EF72D032F479A4715D022AAB22 /* ErrorDispayable.swift in Sources */,
-				4B6DEDB098A91035F1A31F79A391A666 /* ErrorStateView.swift in Sources */,
-				8ACE3F7D7A5D28777F77ED5BB82FB44A /* ErrorView.swift in Sources */,
-				B62A946AAD25482A08C407FE94356B71 /* LoadingCondition.swift in Sources */,
-				FBE8187B10B035954870B0B9A10FDB29 /* LoadingDisplayable.swift in Sources */,
-				8988957CBCC0EB6D5CB8FB969C3D9D6C /* LoadingStateView.swift in Sources */,
-				B12A95AB5E9C7210AABB2F332AE3D234 /* LoadingView.swift in Sources */,
-				0BB4111417FA6A612431B431EB30908D /* NibLoadable.swift in Sources */,
-				AA7CDDAFFB371224FE7820AABC575E32 /* State+Extensions.swift in Sources */,
-				991922749D03BC58FE5F66214915B7D8 /* State.swift in Sources */,
-				683F41A41837E91CB709F61339FF2A0B /* StateActionType.swift in Sources */,
-				856093E2C797E63A0E43B78BF6E41125 /* StateDisplayable.swift in Sources */,
-				FF4CE588C32BE9AFC7F864ABA198DEE5 /* StateMachine.swift in Sources */,
-				6AC82C079C50E4C5883935B8EC4AD663 /* StateView.swift in Sources */,
-				FBD9D4314B472DBCEFD20B0CFCC3ADF9 /* WaterStates+StateDispalyble.swift in Sources */,
-				F91128299C16722CE0ED3682A35174F4 /* WaterStates-dummy.m in Sources */,
-				B50B8C9632C235D7853209E584C8FA20 /* WaterStates.swift in Sources */,
-				9A8E62821A098D2F3F589629D10EC9AE /* WaterStatesConfig.swift in Sources */,
-				66D676D0F0EBF2F457EFB478F332A44B /* WeakAnyStateDisplayable.swift in Sources */,
+				1EB232456F6F86C4AC420B13154D3A48 /* Condition.swift in Sources */,
+				EBEB011BD320E4035D78C28F6B94E759 /* ContentCondition.swift in Sources */,
+				98DAD5B6201740370FB2A8876E4E47EA /* ContentDispayable.swift in Sources */,
+				06993FACE29A0976CBFC37D5F2E0BCB0 /* Displayable+Extensions.swift in Sources */,
+				73EFBAC05C4755C25E02FA9702003CD3 /* DisplaybleView.swift in Sources */,
+				5319F82FF2983A1A8D0DEB4F6096C685 /* EmptyCondition.swift in Sources */,
+				8E799CDF2E4E0B57E36355F65C876042 /* EmptyDisplayable.swift in Sources */,
+				A0B5937AFD9054C022433BC682E5A1A1 /* EmptyStateStyle.swift in Sources */,
+				54B2207CCFA01EEC60F422F7159B0E49 /* EmptyStateView.swift in Sources */,
+				2000779BB921D80466F810C92FC80D55 /* EmptyView.swift in Sources */,
+				3D3F998E51AB1967C2E61953289DF765 /* ErrorCondition.swift in Sources */,
+				C93C3DFE81D09E665B1A483C91224E90 /* ErrorDispayable.swift in Sources */,
+				0D46A59F5FAF3496F7CE1FC7F52EAAE2 /* ErrorStateStyle.swift in Sources */,
+				D80F1BE64D80FE450837EF0E76384F33 /* ErrorStateView.swift in Sources */,
+				43AAF68DD31EC07F3D017926E9DD7BBD /* ErrorView.swift in Sources */,
+				6E8013A9648E524B4E00E304530F89F0 /* LoadingCondition.swift in Sources */,
+				5C7288DB4E4B73AFC5A101B37CE69C8A /* LoadingDisplayable.swift in Sources */,
+				A07797F3A610D5CEB56A6EE5A97139AF /* LoadingStateStyle.swift in Sources */,
+				32BF1AE337D7955D5B05BAE86CCEA086 /* LoadingStateView.swift in Sources */,
+				BE5BC4F111E72A432CDEC1788633A96C /* LoadingView.swift in Sources */,
+				2ED04E81BCD3E60C62339B2D59348FE8 /* NibLoadable.swift in Sources */,
+				CA9FBF8F4651B10C4E2ACC526E885A4A /* State+Extensions.swift in Sources */,
+				C2244B2E84C56E362298C4ADE3DA9534 /* State.swift in Sources */,
+				0A8916231A0719DCCDFCD94D9794F136 /* StateActionType.swift in Sources */,
+				FFFCAF2FEEEE931BDCF413720D6A71DF /* StateDisplayable.swift in Sources */,
+				50D3281C8B762E04B433AD36A8FDCF32 /* StateMachine.swift in Sources */,
+				EBA0C7E51495051763A61230CA7334FD /* StateView.swift in Sources */,
+				62AC53A9BDE0F9F832793A3644C09F07 /* WaterStates+StateDispalyble.swift in Sources */,
+				6C60D1E1A8BA23A52E7BC84829D23354 /* WaterStates-dummy.m in Sources */,
+				6DCB1E0F0A3994B82735EBB37397E73A /* WaterStates.swift in Sources */,
+				FD5A85659F5861D35ABD351B6AA95A79 /* WaterStatesConfig.swift in Sources */,
+				21388570B787E1E8F9EB11E98676F888 /* WeakAnyStateDisplayable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,11 +699,11 @@
 			target = 3C65A763063B3FA62508609068353B23 /* Pods-WaterStates_Example */;
 			targetProxy = C8A53E9DA9668E5181F6352E2A2B0DE9 /* PBXContainerItemProxy */;
 		};
-		819C150ED0A80478D0EE12A4DF3AEB43 /* PBXTargetDependency */ = {
+		1E738CA15F22E21E0657FB12BF18DEB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "WaterStates-WaterStates";
 			target = 01E80848363B654A23543D9EB680073A /* WaterStates-WaterStates */;
-			targetProxy = 19FECCD606817404EBA6A2849B8CDA06 /* PBXContainerItemProxy */;
+			targetProxy = EE7C8C3A86B0F1EE69723C7172426688 /* PBXContainerItemProxy */;
 		};
 		BAAC5E154C0A52F31E5254285C68BAB9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -693,6 +714,23 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0E14CCDB4601B45CAA0CE0832AFB77E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B6DF4A0F1BE6A52095078BDEA36440E /* WaterStates.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WaterStates";
+				IBSC_MODULE = WaterStates;
+				INFOPLIST_FILE = "Target Support Files/WaterStates/ResourceBundle-WaterStates-WaterStates-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = WaterStates;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		1FA8BAE8DC02E5B3D526023A61AC0DA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F2DECA47C6D33325B9F01E417EB82DEB /* Pods-WaterStates_Tests.debug.xcconfig */;
@@ -726,9 +764,9 @@
 			};
 			name = Debug;
 		};
-		44FF090EAAD28759C3CA764211655A6F /* Debug */ = {
+		3D3436EBA4FA53186962F0F9A501D1DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6CF866E60CE0BE12219FBD9E292FEBA /* WaterStates.xcconfig */;
+			baseConfigurationReference = 0B6DF4A0F1BE6A52095078BDEA36440E /* WaterStates.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -787,23 +825,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6741CCF2C4B7C37BE965498351CD054C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6CF866E60CE0BE12219FBD9E292FEBA /* WaterStates.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WaterStates";
-				IBSC_MODULE = WaterStates;
-				INFOPLIST_FILE = "Target Support Files/WaterStates/ResourceBundle-WaterStates-WaterStates-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = WaterStates;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -898,6 +919,38 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B4085E38073FF7496FCF364C7D973FC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B6DF4A0F1BE6A52095078BDEA36440E /* WaterStates.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WaterStates/WaterStates-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WaterStates/WaterStates-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WaterStates/WaterStates.modulemap";
+				PRODUCT_MODULE_NAME = WaterStates;
+				PRODUCT_NAME = WaterStates;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -999,9 +1052,9 @@
 			};
 			name = Debug;
 		};
-		C21E0AA7FFC2F5E7DB09426E324E1278 /* Release */ = {
+		CCF111AF977EF9E75067DC1E8CCEED4E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6CF866E60CE0BE12219FBD9E292FEBA /* WaterStates.xcconfig */;
+			baseConfigurationReference = 0B6DF4A0F1BE6A52095078BDEA36440E /* WaterStates.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WaterStates";
@@ -1014,39 +1067,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
-		};
-		E596EC95298BD6DA5C755E423BCDA000 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6CF866E60CE0BE12219FBD9E292FEBA /* WaterStates.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WaterStates/WaterStates-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WaterStates/WaterStates-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WaterStates/WaterStates.modulemap";
-				PRODUCT_MODULE_NAME = WaterStates;
-				PRODUCT_NAME = WaterStates;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1078,20 +1099,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		960831747495DC3C2DF40D79DAA0A3B5 /* Build configuration list for PBXNativeTarget "WaterStates-WaterStates" */ = {
+		5A178DE5EAF95B36CE7E9D16BE2CCFAB /* Build configuration list for PBXNativeTarget "WaterStates-WaterStates" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6741CCF2C4B7C37BE965498351CD054C /* Debug */,
-				C21E0AA7FFC2F5E7DB09426E324E1278 /* Release */,
+				CCF111AF977EF9E75067DC1E8CCEED4E /* Debug */,
+				0E14CCDB4601B45CAA0CE0832AFB77E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E13702FB67D8D95F6D4215D49A8EB243 /* Build configuration list for PBXNativeTarget "WaterStates" */ = {
+		F0D65AB031E52287F710A2AE5C6E641E /* Build configuration list for PBXNativeTarget "WaterStates" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				44FF090EAAD28759C3CA764211655A6F /* Debug */,
-				E596EC95298BD6DA5C755E423BCDA000 /* Release */,
+				3D3436EBA4FA53186962F0F9A501D1DD /* Debug */,
+				B4085E38073FF7496FCF364C7D973FC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

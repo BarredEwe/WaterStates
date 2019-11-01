@@ -15,7 +15,7 @@ public extension WaterStates where Self: UIViewController {
         stateMachine?.setState(state)
     }
 
-    func showError(_ error: Error) {
+    func showError(_ error: Error?) {
         if errorView == nil {
             errorView = WaterStatesConfig.errorView
             let output = getModuleInput(for: "output") as? ErrorStateDelegate

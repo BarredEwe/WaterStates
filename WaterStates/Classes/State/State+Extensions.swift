@@ -8,6 +8,10 @@ public extension State {
         return .empty("")
     }
 
+    static var error: State {
+        return .error(nil)
+    }
+
     func set(loading: String? = nil, content: T? = nil, empty: String? = nil, error: Error? = nil) -> State {
         switch (self, loading, content, empty, error) {
         case (.loading, let .some(type), _, _, _): return .loading(type)
@@ -21,7 +25,7 @@ public extension State {
     @discardableResult func `do`(onLoading: ((String) -> Void)? = nil,
                                  onContent: ((T) -> Void)? = nil,
                                  onEmpty: ((String) -> Void)? = nil,
-                                 onError: ((Error) -> Void)? = nil) -> State<T> {
+                                 onError: ((Error?) -> Void)? = nil) -> State<T> {
         switch self {
         case let .loading(type): onLoading?(type)
         case let .content(value): onContent?(value)

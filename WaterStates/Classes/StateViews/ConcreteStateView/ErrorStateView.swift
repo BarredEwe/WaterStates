@@ -10,7 +10,7 @@ import Foundation
 
 public protocol ErrorStateView: StateView {
     var delegate: ErrorStateDelegate? { get set }
-    func configure(with error: Error)
+    func configure(with error: Error?)
 }
 
 public protocol ErrorStateDelegate: class {
