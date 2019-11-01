@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WaterStates_Example' do
+  pod 'WaterStates', :path => '../'
+
+  target 'WaterStates_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

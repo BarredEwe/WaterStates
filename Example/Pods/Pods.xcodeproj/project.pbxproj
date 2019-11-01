@@ -1,0 +1,1102 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BB4111417FA6A612431B431EB30908D /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB3248DDECC2B3945C9AF7B74C5B50F /* NibLoadable.swift */; };
+		0E1F8A86A77BEF25A317868EA00B3AC0 /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 794D64CA0C09C9A72EFB1979B04CA604 /* EmptyView.xib */; };
+		11C5EC3AC7F935C9FBA00385AA22050E /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C478852386CB7D580210F5B4F8376B /* ErrorView.xib */; };
+		12F97125A6AA28000797788AA7BE07B9 /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 794D64CA0C09C9A72EFB1979B04CA604 /* EmptyView.xib */; };
+		1635219E583B21D97A0B9E28D6977CC3 /* EmptyDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960918D7A58CF044C0A4DDAB38EB1A4 /* EmptyDisplayable.swift */; };
+		27D353376D63C0705707B113EB119FE0 /* ContentDispayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A216774C6D28BE563302B9C31F7AF89 /* ContentDispayable.swift */; };
+		29BECDA19DCD1700999EBB72BFCDB48D /* Pods-WaterStates_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC7562A1E63F891DAE438F742F78D571 /* Pods-WaterStates_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3086D7D220C19D8A5BC2E7F9543A83C2 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340CE0B11AC63C48B64A7526214B2292 /* LoadingView.xib */; };
+		394685765E1B2CA5EFEE0E5B39D82E3A /* ContentCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836C9D3A8C19B6688374294F2038C097 /* ContentCondition.swift */; };
+		3E46D486D39211E7EC735E89EFFDC9E7 /* EmptyCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFFE4003BBFE758A2F16FEBEFEA91B /* EmptyCondition.swift */; };
+		4103E7C71D51CB12689711010B58FDA2 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071743AE3348E2FAE86D9A1B837D4D1C /* Condition.swift */; };
+		4B6DEDB098A91035F1A31F79A391A666 /* ErrorStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B304928DDE0D2F9810D081C560C38FB4 /* ErrorStateView.swift */; };
+		518614473A3D06ECF01E7C2708472E79 /* Pods-WaterStates_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A58416859E881135717201712C0BD1A /* Pods-WaterStates_Tests-dummy.m */; };
+		529552D3681A32F7FE3786AAC08BA8D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DF1DCAF2BBD1E8EE19C1145CDD1BA12 /* Images.xcassets */; };
+		5F375B7D8184B09B86C3CB535EB788D8 /* DisplaybleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F70D2CEF353D78668A47C4DD6860E0 /* DisplaybleView.swift */; };
+		66D676D0F0EBF2F457EFB478F332A44B /* WeakAnyStateDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2493F2E7E9DA1F5B1001E81746BCEAA /* WeakAnyStateDisplayable.swift */; };
+		683F41A41837E91CB709F61339FF2A0B /* StateActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2586ED469C9A118BFE96F54D22CA13 /* StateActionType.swift */; };
+		6AC82C079C50E4C5883935B8EC4AD663 /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B3FEBEA5335D89299C61628DF7C30B /* StateView.swift */; };
+		732D256B1745483B3F45ECDC36C18888 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C478852386CB7D580210F5B4F8376B /* ErrorView.xib */; };
+		7449B34A5D60565BBA6FE4E866A0617B /* WaterStates-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 180625EB97B744360C8808A6C3D7F1B3 /* WaterStates-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		798118D285AE6C58747B8A5B451A6263 /* Pods-WaterStates_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BD3C3FF211E990C64DC769912E54C7 /* Pods-WaterStates_Example-dummy.m */; };
+		79DC3418EB57EDABA8798C3CE04983D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		856093E2C797E63A0E43B78BF6E41125 /* StateDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D12EB1A903D4F657E87D6A6CB69E7E /* StateDisplayable.swift */; };
+		8988957CBCC0EB6D5CB8FB969C3D9D6C /* LoadingStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AC84368802548C69FCC68EA4F90D09 /* LoadingStateView.swift */; };
+		8ACE3F7D7A5D28777F77ED5BB82FB44A /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B9F7AD8CD76588E448D358C31C559 /* ErrorView.swift */; };
+		92CC056AAC4648CD7CDEE1444F6B0164 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		991922749D03BC58FE5F66214915B7D8 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BC684D3813CD0FC681ADD5884B1CE8 /* State.swift */; };
+		9A8E62821A098D2F3F589629D10EC9AE /* WaterStatesConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F96A76DBE1DEDE5CC83D33B6ADA90 /* WaterStatesConfig.swift */; };
+		AA7CDDAFFB371224FE7820AABC575E32 /* State+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8882EAE06310D943718D534025616E26 /* State+Extensions.swift */; };
+		AD6A839BA714C6502BDE0E350B994733 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2791595661EF0CE8681BE9830CD9BF9 /* EmptyStateView.swift */; };
+		B12A95AB5E9C7210AABB2F332AE3D234 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134064645D7FFAFEBC96B8A1F96F84F3 /* LoadingView.swift */; };
+		B50B8C9632C235D7853209E584C8FA20 /* WaterStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230DD19596E6481062D9CCA0AAE01CFD /* WaterStates.swift */; };
+		B62A946AAD25482A08C407FE94356B71 /* LoadingCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396EA2BEEFA5B317FCDD15E17D91030 /* LoadingCondition.swift */; };
+		C8650A13F87DFD3F9CE22F29C47E6CF5 /* Displayable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1495004C231E2B6E5E98690C0A7D8FA5 /* Displayable+Extensions.swift */; };
+		CDD20BB5F5523F8FCAF282627273B37A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DF1DCAF2BBD1E8EE19C1145CDD1BA12 /* Images.xcassets */; };
+		DEAC4889BF0BB721C1E527819347D845 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234FE897940FF93675A8BE9975E7F40F /* EmptyView.swift */; };
+		E31792B63C0FB0AEB124CFEA6AB24A55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E444311B22DABB8F72593BB7487F7882 /* WaterStates.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 352AA2178808DCDDB9C962A8C38F7126 /* WaterStates.bundle */; };
+		F5C351E75BD58F444F40BBA857DA28A0 /* Pods-WaterStates_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FCA6FEB3663BBBBE103770FF43BE14A /* Pods-WaterStates_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6CF85EF72D032F479A4715D022AAB22 /* ErrorDispayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CF1ADD08600D6FBA1088847E0A688 /* ErrorDispayable.swift */; };
+		F71BEA39BCE50C23B27568441E5369E3 /* ErrorCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B95DB6C76E0FEC49C7D93BF1C377C0 /* ErrorCondition.swift */; };
+		F91128299C16722CE0ED3682A35174F4 /* WaterStates-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D352C5C2063F1F3B71A536419580E156 /* WaterStates-dummy.m */; };
+		F94743C84B5D8BF16E111B5CBEDADE13 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340CE0B11AC63C48B64A7526214B2292 /* LoadingView.xib */; };
+		FBD9D4314B472DBCEFD20B0CFCC3ADF9 /* WaterStates+StateDispalyble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BA2DF1FBACB69485009F9A7783D8DB /* WaterStates+StateDispalyble.swift */; };
+		FBE8187B10B035954870B0B9A10FDB29 /* LoadingDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565F4FEE76B8502834118DD9137594C /* LoadingDisplayable.swift */; };
+		FF4CE588C32BE9AFC7F864ABA198DEE5 /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82BBC0892C8A7890608BC9A9D758A7B /* StateMachine.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19FECCD606817404EBA6A2849B8CDA06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01E80848363B654A23543D9EB680073A;
+			remoteInfo = "WaterStates-WaterStates";
+		};
+		B12818261AE33334291EDD166B890C75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59A3B751E00A87DEA0D21D0C383DDC13;
+			remoteInfo = WaterStates;
+		};
+		C8A53E9DA9668E5181F6352E2A2B0DE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C65A763063B3FA62508609068353B23;
+			remoteInfo = "Pods-WaterStates_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A6B513F59EC1696098FF206AB6D2CE /* Pods_WaterStates_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WaterStates_Example.framework; path = "Pods-WaterStates_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		044FA91A27619E0EFA9B9085E74BBD25 /* Pods-WaterStates_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WaterStates_Example-frameworks.sh"; sourceTree = "<group>"; };
+		071743AE3348E2FAE86D9A1B837D4D1C /* Condition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
+		0BA3F3227A6E8DFE55CE16D4880D7F01 /* WaterStates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WaterStates.framework; path = WaterStates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC807FDBB871B7CE0DED74882350E89 /* WaterStates-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WaterStates-Info.plist"; sourceTree = "<group>"; };
+		118BB0A7B5FA05E5A11238825D89239F /* Pods-WaterStates_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterStates_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		12B95DB6C76E0FEC49C7D93BF1C377C0 /* ErrorCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorCondition.swift; sourceTree = "<group>"; };
+		134064645D7FFAFEBC96B8A1F96F84F3 /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		1495004C231E2B6E5E98690C0A7D8FA5 /* Displayable+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Displayable+Extensions.swift"; sourceTree = "<group>"; };
+		180625EB97B744360C8808A6C3D7F1B3 /* WaterStates-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaterStates-umbrella.h"; sourceTree = "<group>"; };
+		22AC84368802548C69FCC68EA4F90D09 /* LoadingStateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingStateView.swift; sourceTree = "<group>"; };
+		230DD19596E6481062D9CCA0AAE01CFD /* WaterStates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WaterStates.swift; sourceTree = "<group>"; };
+		234FE897940FF93675A8BE9975E7F40F /* EmptyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		24C478852386CB7D580210F5B4F8376B /* ErrorView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ErrorView.xib; path = WaterStates/Assets/ErrorView.xib; sourceTree = "<group>"; };
+		2565F4FEE76B8502834118DD9137594C /* LoadingDisplayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingDisplayable.swift; sourceTree = "<group>"; };
+		2960918D7A58CF044C0A4DDAB38EB1A4 /* EmptyDisplayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmptyDisplayable.swift; sourceTree = "<group>"; };
+		2CB62A1A72CD8251FAA3079B50B1FB95 /* Pods-WaterStates_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WaterStates_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3396EA2BEEFA5B317FCDD15E17D91030 /* LoadingCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingCondition.swift; sourceTree = "<group>"; };
+		340CE0B11AC63C48B64A7526214B2292 /* LoadingView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoadingView.xib; path = WaterStates/Assets/LoadingView.xib; sourceTree = "<group>"; };
+		352AA2178808DCDDB9C962A8C38F7126 /* WaterStates.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = WaterStates.bundle; path = "WaterStates-WaterStates.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3682DD3D8321D72C242F0FC7E160D753 /* Pods-WaterStates_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WaterStates_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		45BA2DF1FBACB69485009F9A7783D8DB /* WaterStates+StateDispalyble.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "WaterStates+StateDispalyble.swift"; sourceTree = "<group>"; };
+		46D12EB1A903D4F657E87D6A6CB69E7E /* StateDisplayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StateDisplayable.swift; sourceTree = "<group>"; };
+		4A58416859E881135717201712C0BD1A /* Pods-WaterStates_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WaterStates_Tests-dummy.m"; sourceTree = "<group>"; };
+		4E2586ED469C9A118BFE96F54D22CA13 /* StateActionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StateActionType.swift; sourceTree = "<group>"; };
+		4FC07721B2F0B23293C7B9406D1B3537 /* Pods-WaterStates_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WaterStates_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		50B3FEBEA5335D89299C61628DF7C30B /* StateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
+		52BC684D3813CD0FC681ADD5884B1CE8 /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		59B1E37F99166BD1E83965CB05776DB3 /* Pods-WaterStates_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WaterStates_Tests.modulemap"; sourceTree = "<group>"; };
+		63F70D2CEF353D78668A47C4DD6860E0 /* DisplaybleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisplaybleView.swift; sourceTree = "<group>"; };
+		6B98E2D4C81A9B91742CCFB2451346E1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		74E2EF672FA2730504E9D31CE1B273A7 /* Pods-WaterStates_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WaterStates_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7686F6E2ECBDAB943DCF9C8363A41A9E /* Pods-WaterStates_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterStates_Example.release.xcconfig"; sourceTree = "<group>"; };
+		794D64CA0C09C9A72EFB1979B04CA604 /* EmptyView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = EmptyView.xib; path = WaterStates/Assets/EmptyView.xib; sourceTree = "<group>"; };
+		7DF1DCAF2BBD1E8EE19C1145CDD1BA12 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = WaterStates/Assets/Images.xcassets; sourceTree = "<group>"; };
+		836C9D3A8C19B6688374294F2038C097 /* ContentCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentCondition.swift; sourceTree = "<group>"; };
+		8882EAE06310D943718D534025616E26 /* State+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "State+Extensions.swift"; sourceTree = "<group>"; };
+		8FCA6FEB3663BBBBE103770FF43BE14A /* Pods-WaterStates_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WaterStates_Tests-umbrella.h"; sourceTree = "<group>"; };
+		96E19CCBB01AFFBDD47D6C9BC1DAA7F9 /* WaterStates-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaterStates-prefix.pch"; sourceTree = "<group>"; };
+		99FEE21DAF19E802B6F786180FCF4724 /* WaterStates.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WaterStates.modulemap; sourceTree = "<group>"; };
+		9A216774C6D28BE563302B9C31F7AF89 /* ContentDispayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentDispayable.swift; sourceTree = "<group>"; };
+		9A8CF1ADD08600D6FBA1088847E0A688 /* ErrorDispayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorDispayable.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1BD3C3FF211E990C64DC769912E54C7 /* Pods-WaterStates_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WaterStates_Example-dummy.m"; sourceTree = "<group>"; };
+		A6CF866E60CE0BE12219FBD9E292FEBA /* WaterStates.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WaterStates.xcconfig; sourceTree = "<group>"; };
+		A82BBC0892C8A7890608BC9A9D758A7B /* StateMachine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
+		AF2C0301FE65F2844CE320B75EA979E2 /* Pods-WaterStates_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterStates_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B304928DDE0D2F9810D081C560C38FB4 /* ErrorStateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorStateView.swift; sourceTree = "<group>"; };
+		BAB3248DDECC2B3945C9AF7B74C5B50F /* NibLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		BB2938E64C6C2B90EB4A8A593B1F64FF /* Pods-WaterStates_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WaterStates_Example-Info.plist"; sourceTree = "<group>"; };
+		BF23A65553092DD33CC485A9B1388B42 /* Pods-WaterStates_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WaterStates_Tests-Info.plist"; sourceTree = "<group>"; };
+		C119A3DEA88432BFBB1A3D553CE7C949 /* Pods_WaterStates_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WaterStates_Tests.framework; path = "Pods-WaterStates_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2493F2E7E9DA1F5B1001E81746BCEAA /* WeakAnyStateDisplayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeakAnyStateDisplayable.swift; sourceTree = "<group>"; };
+		C6DFFE4003BBFE758A2F16FEBEFEA91B /* EmptyCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmptyCondition.swift; sourceTree = "<group>"; };
+		C8EE8BED1FA6673919DD7B6293B3E21F /* ResourceBundle-WaterStates-WaterStates-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-WaterStates-WaterStates-Info.plist"; sourceTree = "<group>"; };
+		CE2F96A76DBE1DEDE5CC83D33B6ADA90 /* WaterStatesConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WaterStatesConfig.swift; sourceTree = "<group>"; };
+		D352C5C2063F1F3B71A536419580E156 /* WaterStates-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WaterStates-dummy.m"; sourceTree = "<group>"; };
+		DAC4BB4556925341530DE3253A411135 /* WaterStates.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WaterStates.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EFC04F39396DDF7DEDA99504D5DD35A8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F2791595661EF0CE8681BE9830CD9BF9 /* EmptyStateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		F2DECA47C6D33325B9F01E417EB82DEB /* Pods-WaterStates_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterStates_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA2B9F7AD8CD76588E448D358C31C559 /* ErrorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		FC7562A1E63F891DAE438F742F78D571 /* Pods-WaterStates_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WaterStates_Example-umbrella.h"; sourceTree = "<group>"; };
+		FD1F1007F0BD5BDE6E3AA858867C2CE8 /* Pods-WaterStates_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WaterStates_Example.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D1E7CB6614228FF0B750527BE9B093C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E31792B63C0FB0AEB124CFEA6AB24A55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FEE2A8A8E13F6C33BDF425F5C661DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79DC3418EB57EDABA8798C3CE04983D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9671E9C80678BBA52BA91DB93C5D543B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92CC056AAC4648CD7CDEE1444F6B0164 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51384834160EAAEC3D74CAC5E3E4E9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00EBDE8337E10B264FF84AF5D28C2535 /* WaterStates */ = {
+			isa = PBXGroup;
+			children = (
+				63F70D2CEF353D78668A47C4DD6860E0 /* DisplaybleView.swift */,
+				BAB3248DDECC2B3945C9AF7B74C5B50F /* NibLoadable.swift */,
+				4E2586ED469C9A118BFE96F54D22CA13 /* StateActionType.swift */,
+				230DD19596E6481062D9CCA0AAE01CFD /* WaterStates.swift */,
+				45BA2DF1FBACB69485009F9A7783D8DB /* WaterStates+StateDispalyble.swift */,
+			);
+			name = WaterStates;
+			path = WaterStates/Classes/WaterStates;
+			sourceTree = "<group>";
+		};
+		211D071AEC900A43B069E00B966DA402 /* WaterStates */ = {
+			isa = PBXGroup;
+			children = (
+				AEA3A596064E7F4BD0ECBCE1027015F2 /* Condition */,
+				8402B66920F3BA79B54E6412C18E800C /* Configs */,
+				D8054CEBBFF31660C9E0CA2449CB30E4 /* DefaultViews */,
+				61D5C53A61938F746E9122F40A968172 /* Displayable */,
+				9A75CCA76D07CFE9CE8ACBCA7BAB7163 /* Pod */,
+				F6A3647CC5D615E74274A0A92318E45B /* Resources */,
+				C15787EE91ED76AE0A34ACD5757D8814 /* State */,
+				43A4C3AA36BDB58B00EA32719A7F83FB /* StateMachine */,
+				D9F89F26045B0BF2F3DFC74837CEB596 /* StateViews */,
+				3777AF72DDC6BDBA07E7C407212E08EF /* Support Files */,
+				00EBDE8337E10B264FF84AF5D28C2535 /* WaterStates */,
+			);
+			name = WaterStates;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		2A50179938B54CB3FC56D8679FA1605E /* ConcreteStateView */ = {
+			isa = PBXGroup;
+			children = (
+				F2791595661EF0CE8681BE9830CD9BF9 /* EmptyStateView.swift */,
+				B304928DDE0D2F9810D081C560C38FB4 /* ErrorStateView.swift */,
+				22AC84368802548C69FCC68EA4F90D09 /* LoadingStateView.swift */,
+			);
+			name = ConcreteStateView;
+			path = ConcreteStateView;
+			sourceTree = "<group>";
+		};
+		3777AF72DDC6BDBA07E7C407212E08EF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8EE8BED1FA6673919DD7B6293B3E21F /* ResourceBundle-WaterStates-WaterStates-Info.plist */,
+				99FEE21DAF19E802B6F786180FCF4724 /* WaterStates.modulemap */,
+				A6CF866E60CE0BE12219FBD9E292FEBA /* WaterStates.xcconfig */,
+				D352C5C2063F1F3B71A536419580E156 /* WaterStates-dummy.m */,
+				0CC807FDBB871B7CE0DED74882350E89 /* WaterStates-Info.plist */,
+				96E19CCBB01AFFBDD47D6C9BC1DAA7F9 /* WaterStates-prefix.pch */,
+				180625EB97B744360C8808A6C3D7F1B3 /* WaterStates-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WaterStates";
+			sourceTree = "<group>";
+		};
+		43A4C3AA36BDB58B00EA32719A7F83FB /* StateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				A82BBC0892C8A7890608BC9A9D758A7B /* StateMachine.swift */,
+			);
+			name = StateMachine;
+			path = WaterStates/Classes/StateMachine;
+			sourceTree = "<group>";
+		};
+		61D5C53A61938F746E9122F40A968172 /* Displayable */ = {
+			isa = PBXGroup;
+			children = (
+				9A216774C6D28BE563302B9C31F7AF89 /* ContentDispayable.swift */,
+				1495004C231E2B6E5E98690C0A7D8FA5 /* Displayable+Extensions.swift */,
+				2960918D7A58CF044C0A4DDAB38EB1A4 /* EmptyDisplayable.swift */,
+				9A8CF1ADD08600D6FBA1088847E0A688 /* ErrorDispayable.swift */,
+				2565F4FEE76B8502834118DD9137594C /* LoadingDisplayable.swift */,
+				46D12EB1A903D4F657E87D6A6CB69E7E /* StateDisplayable.swift */,
+				C2493F2E7E9DA1F5B1001E81746BCEAA /* WeakAnyStateDisplayable.swift */,
+			);
+			name = Displayable;
+			path = WaterStates/Classes/Displayable;
+			sourceTree = "<group>";
+		};
+		694D248B283981F5E8031DD99C1DC038 /* Pods-WaterStates_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				59B1E37F99166BD1E83965CB05776DB3 /* Pods-WaterStates_Tests.modulemap */,
+				74E2EF672FA2730504E9D31CE1B273A7 /* Pods-WaterStates_Tests-acknowledgements.markdown */,
+				3682DD3D8321D72C242F0FC7E160D753 /* Pods-WaterStates_Tests-acknowledgements.plist */,
+				4A58416859E881135717201712C0BD1A /* Pods-WaterStates_Tests-dummy.m */,
+				BF23A65553092DD33CC485A9B1388B42 /* Pods-WaterStates_Tests-Info.plist */,
+				8FCA6FEB3663BBBBE103770FF43BE14A /* Pods-WaterStates_Tests-umbrella.h */,
+				F2DECA47C6D33325B9F01E417EB82DEB /* Pods-WaterStates_Tests.debug.xcconfig */,
+				118BB0A7B5FA05E5A11238825D89239F /* Pods-WaterStates_Tests.release.xcconfig */,
+			);
+			name = "Pods-WaterStates_Tests";
+			path = "Target Support Files/Pods-WaterStates_Tests";
+			sourceTree = "<group>";
+		};
+		7979022D0777DD2A0DA89AB6959814B5 /* Pods-WaterStates_Example */ = {
+			isa = PBXGroup;
+			children = (
+				FD1F1007F0BD5BDE6E3AA858867C2CE8 /* Pods-WaterStates_Example.modulemap */,
+				4FC07721B2F0B23293C7B9406D1B3537 /* Pods-WaterStates_Example-acknowledgements.markdown */,
+				2CB62A1A72CD8251FAA3079B50B1FB95 /* Pods-WaterStates_Example-acknowledgements.plist */,
+				A1BD3C3FF211E990C64DC769912E54C7 /* Pods-WaterStates_Example-dummy.m */,
+				044FA91A27619E0EFA9B9085E74BBD25 /* Pods-WaterStates_Example-frameworks.sh */,
+				BB2938E64C6C2B90EB4A8A593B1F64FF /* Pods-WaterStates_Example-Info.plist */,
+				FC7562A1E63F891DAE438F742F78D571 /* Pods-WaterStates_Example-umbrella.h */,
+				AF2C0301FE65F2844CE320B75EA979E2 /* Pods-WaterStates_Example.debug.xcconfig */,
+				7686F6E2ECBDAB943DCF9C8363A41A9E /* Pods-WaterStates_Example.release.xcconfig */,
+			);
+			name = "Pods-WaterStates_Example";
+			path = "Target Support Files/Pods-WaterStates_Example";
+			sourceTree = "<group>";
+		};
+		8402B66920F3BA79B54E6412C18E800C /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				CE2F96A76DBE1DEDE5CC83D33B6ADA90 /* WaterStatesConfig.swift */,
+			);
+			name = Configs;
+			path = WaterStates/Classes/Configs;
+			sourceTree = "<group>";
+		};
+		8B27521347596926375B2B370AEFD883 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00A6B513F59EC1696098FF206AB6D2CE /* Pods_WaterStates_Example.framework */,
+				C119A3DEA88432BFBB1A3D553CE7C949 /* Pods_WaterStates_Tests.framework */,
+				352AA2178808DCDDB9C962A8C38F7126 /* WaterStates.bundle */,
+				0BA3F3227A6E8DFE55CE16D4880D7F01 /* WaterStates.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E431CE65F054BDC7AA4F8CBA3557B2B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7979022D0777DD2A0DA89AB6959814B5 /* Pods-WaterStates_Example */,
+				694D248B283981F5E8031DD99C1DC038 /* Pods-WaterStates_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9A75CCA76D07CFE9CE8ACBCA7BAB7163 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				EFC04F39396DDF7DEDA99504D5DD35A8 /* LICENSE */,
+				6B98E2D4C81A9B91742CCFB2451346E1 /* README.md */,
+				DAC4BB4556925341530DE3253A411135 /* WaterStates.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		AEA3A596064E7F4BD0ECBCE1027015F2 /* Condition */ = {
+			isa = PBXGroup;
+			children = (
+				071743AE3348E2FAE86D9A1B837D4D1C /* Condition.swift */,
+				BEA38225712C68844390157C48309B9E /* ConcreteConditions */,
+			);
+			name = Condition;
+			path = WaterStates/Classes/Condition;
+			sourceTree = "<group>";
+		};
+		BEA38225712C68844390157C48309B9E /* ConcreteConditions */ = {
+			isa = PBXGroup;
+			children = (
+				836C9D3A8C19B6688374294F2038C097 /* ContentCondition.swift */,
+				C6DFFE4003BBFE758A2F16FEBEFEA91B /* EmptyCondition.swift */,
+				12B95DB6C76E0FEC49C7D93BF1C377C0 /* ErrorCondition.swift */,
+				3396EA2BEEFA5B317FCDD15E17D91030 /* LoadingCondition.swift */,
+			);
+			name = ConcreteConditions;
+			path = ConcreteConditions;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C15787EE91ED76AE0A34ACD5757D8814 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				52BC684D3813CD0FC681ADD5884B1CE8 /* State.swift */,
+				8882EAE06310D943718D534025616E26 /* State+Extensions.swift */,
+			);
+			name = State;
+			path = WaterStates/Classes/State;
+			sourceTree = "<group>";
+		};
+		C53DB2DEE24155F9F548A64FCB7139EE /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				211D071AEC900A43B069E00B966DA402 /* WaterStates */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				C53DB2DEE24155F9F548A64FCB7139EE /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				8B27521347596926375B2B370AEFD883 /* Products */,
+				8E431CE65F054BDC7AA4F8CBA3557B2B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8054CEBBFF31660C9E0CA2449CB30E4 /* DefaultViews */ = {
+			isa = PBXGroup;
+			children = (
+				234FE897940FF93675A8BE9975E7F40F /* EmptyView.swift */,
+				FA2B9F7AD8CD76588E448D358C31C559 /* ErrorView.swift */,
+				134064645D7FFAFEBC96B8A1F96F84F3 /* LoadingView.swift */,
+			);
+			name = DefaultViews;
+			path = WaterStates/Classes/DefaultViews;
+			sourceTree = "<group>";
+		};
+		D9F89F26045B0BF2F3DFC74837CEB596 /* StateViews */ = {
+			isa = PBXGroup;
+			children = (
+				50B3FEBEA5335D89299C61628DF7C30B /* StateView.swift */,
+				2A50179938B54CB3FC56D8679FA1605E /* ConcreteStateView */,
+			);
+			name = StateViews;
+			path = WaterStates/Classes/StateViews;
+			sourceTree = "<group>";
+		};
+		F6A3647CC5D615E74274A0A92318E45B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				794D64CA0C09C9A72EFB1979B04CA604 /* EmptyView.xib */,
+				24C478852386CB7D580210F5B4F8376B /* ErrorView.xib */,
+				7DF1DCAF2BBD1E8EE19C1145CDD1BA12 /* Images.xcassets */,
+				340CE0B11AC63C48B64A7526214B2292 /* LoadingView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		112E64CD021F469F9D8C53203B360F8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7449B34A5D60565BBA6FE4E866A0617B /* WaterStates-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FB607704C3F97A326E10C4650F70B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C351E75BD58F444F40BBA857DA28A0 /* Pods-WaterStates_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA283311F4800EBC98495A173935631C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29BECDA19DCD1700999EBB72BFCDB48D /* Pods-WaterStates_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		01E80848363B654A23543D9EB680073A /* WaterStates-WaterStates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960831747495DC3C2DF40D79DAA0A3B5 /* Build configuration list for PBXNativeTarget "WaterStates-WaterStates" */;
+			buildPhases = (
+				2123C0D1BFAFDEED4660A337F8D33F27 /* Sources */,
+				A51384834160EAAEC3D74CAC5E3E4E9D /* Frameworks */,
+				D47578048B20F90089EA8B00848D3B61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WaterStates-WaterStates";
+			productName = "WaterStates-WaterStates";
+			productReference = 352AA2178808DCDDB9C962A8C38F7126 /* WaterStates.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		3C65A763063B3FA62508609068353B23 /* Pods-WaterStates_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A464255E15B156D6A5C9FF746301627 /* Build configuration list for PBXNativeTarget "Pods-WaterStates_Example" */;
+			buildPhases = (
+				FA283311F4800EBC98495A173935631C /* Headers */,
+				66F0FBFDF534E9EE63598794260E2882 /* Sources */,
+				1D1E7CB6614228FF0B750527BE9B093C /* Frameworks */,
+				3A53F0F341590472C21BF957E1585262 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAAC5E154C0A52F31E5254285C68BAB9 /* PBXTargetDependency */,
+			);
+			name = "Pods-WaterStates_Example";
+			productName = "Pods-WaterStates_Example";
+			productReference = 00A6B513F59EC1696098FF206AB6D2CE /* Pods_WaterStates_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		59A3B751E00A87DEA0D21D0C383DDC13 /* WaterStates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E13702FB67D8D95F6D4215D49A8EB243 /* Build configuration list for PBXNativeTarget "WaterStates" */;
+			buildPhases = (
+				112E64CD021F469F9D8C53203B360F8C /* Headers */,
+				88D4CB9F5BC85962F188F6B1B31B7370 /* Sources */,
+				7FEE2A8A8E13F6C33BDF425F5C661DF2 /* Frameworks */,
+				2CED818B67390EE0FC39100C0CFE5C8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				819C150ED0A80478D0EE12A4DF3AEB43 /* PBXTargetDependency */,
+			);
+			name = WaterStates;
+			productName = WaterStates;
+			productReference = 0BA3F3227A6E8DFE55CE16D4880D7F01 /* WaterStates.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6B6A13987A229ADEE8ADB8CCEC6AF011 /* Pods-WaterStates_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 112733C224688741DEE6BF7B1EAFE6DF /* Build configuration list for PBXNativeTarget "Pods-WaterStates_Tests" */;
+			buildPhases = (
+				86FB607704C3F97A326E10C4650F70B1 /* Headers */,
+				4548599371BE1F2D03DA85067CF9E002 /* Sources */,
+				9671E9C80678BBA52BA91DB93C5D543B /* Frameworks */,
+				9B090BC68AFB2E5155A81F5A4A8B4744 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11C5B8B37C6B401E27BB0FD77C9E3C4B /* PBXTargetDependency */,
+			);
+			name = "Pods-WaterStates_Tests";
+			productName = "Pods-WaterStates_Tests";
+			productReference = C119A3DEA88432BFBB1A3D553CE7C949 /* Pods_WaterStates_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8B27521347596926375B2B370AEFD883 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C65A763063B3FA62508609068353B23 /* Pods-WaterStates_Example */,
+				6B6A13987A229ADEE8ADB8CCEC6AF011 /* Pods-WaterStates_Tests */,
+				59A3B751E00A87DEA0D21D0C383DDC13 /* WaterStates */,
+				01E80848363B654A23543D9EB680073A /* WaterStates-WaterStates */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CED818B67390EE0FC39100C0CFE5C8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E1F8A86A77BEF25A317868EA00B3AC0 /* EmptyView.xib in Resources */,
+				11C5EC3AC7F935C9FBA00385AA22050E /* ErrorView.xib in Resources */,
+				529552D3681A32F7FE3786AAC08BA8D0 /* Images.xcassets in Resources */,
+				F94743C84B5D8BF16E111B5CBEDADE13 /* LoadingView.xib in Resources */,
+				E444311B22DABB8F72593BB7487F7882 /* WaterStates.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A53F0F341590472C21BF957E1585262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B090BC68AFB2E5155A81F5A4A8B4744 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D47578048B20F90089EA8B00848D3B61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F97125A6AA28000797788AA7BE07B9 /* EmptyView.xib in Resources */,
+				732D256B1745483B3F45ECDC36C18888 /* ErrorView.xib in Resources */,
+				CDD20BB5F5523F8FCAF282627273B37A /* Images.xcassets in Resources */,
+				3086D7D220C19D8A5BC2E7F9543A83C2 /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2123C0D1BFAFDEED4660A337F8D33F27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4548599371BE1F2D03DA85067CF9E002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				518614473A3D06ECF01E7C2708472E79 /* Pods-WaterStates_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F0FBFDF534E9EE63598794260E2882 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				798118D285AE6C58747B8A5B451A6263 /* Pods-WaterStates_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D4CB9F5BC85962F188F6B1B31B7370 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4103E7C71D51CB12689711010B58FDA2 /* Condition.swift in Sources */,
+				394685765E1B2CA5EFEE0E5B39D82E3A /* ContentCondition.swift in Sources */,
+				27D353376D63C0705707B113EB119FE0 /* ContentDispayable.swift in Sources */,
+				C8650A13F87DFD3F9CE22F29C47E6CF5 /* Displayable+Extensions.swift in Sources */,
+				5F375B7D8184B09B86C3CB535EB788D8 /* DisplaybleView.swift in Sources */,
+				3E46D486D39211E7EC735E89EFFDC9E7 /* EmptyCondition.swift in Sources */,
+				1635219E583B21D97A0B9E28D6977CC3 /* EmptyDisplayable.swift in Sources */,
+				AD6A839BA714C6502BDE0E350B994733 /* EmptyStateView.swift in Sources */,
+				DEAC4889BF0BB721C1E527819347D845 /* EmptyView.swift in Sources */,
+				F71BEA39BCE50C23B27568441E5369E3 /* ErrorCondition.swift in Sources */,
+				F6CF85EF72D032F479A4715D022AAB22 /* ErrorDispayable.swift in Sources */,
+				4B6DEDB098A91035F1A31F79A391A666 /* ErrorStateView.swift in Sources */,
+				8ACE3F7D7A5D28777F77ED5BB82FB44A /* ErrorView.swift in Sources */,
+				B62A946AAD25482A08C407FE94356B71 /* LoadingCondition.swift in Sources */,
+				FBE8187B10B035954870B0B9A10FDB29 /* LoadingDisplayable.swift in Sources */,
+				8988957CBCC0EB6D5CB8FB969C3D9D6C /* LoadingStateView.swift in Sources */,
+				B12A95AB5E9C7210AABB2F332AE3D234 /* LoadingView.swift in Sources */,
+				0BB4111417FA6A612431B431EB30908D /* NibLoadable.swift in Sources */,
+				AA7CDDAFFB371224FE7820AABC575E32 /* State+Extensions.swift in Sources */,
+				991922749D03BC58FE5F66214915B7D8 /* State.swift in Sources */,
+				683F41A41837E91CB709F61339FF2A0B /* StateActionType.swift in Sources */,
+				856093E2C797E63A0E43B78BF6E41125 /* StateDisplayable.swift in Sources */,
+				FF4CE588C32BE9AFC7F864ABA198DEE5 /* StateMachine.swift in Sources */,
+				6AC82C079C50E4C5883935B8EC4AD663 /* StateView.swift in Sources */,
+				FBD9D4314B472DBCEFD20B0CFCC3ADF9 /* WaterStates+StateDispalyble.swift in Sources */,
+				F91128299C16722CE0ED3682A35174F4 /* WaterStates-dummy.m in Sources */,
+				B50B8C9632C235D7853209E584C8FA20 /* WaterStates.swift in Sources */,
+				9A8E62821A098D2F3F589629D10EC9AE /* WaterStatesConfig.swift in Sources */,
+				66D676D0F0EBF2F457EFB478F332A44B /* WeakAnyStateDisplayable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11C5B8B37C6B401E27BB0FD77C9E3C4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WaterStates_Example";
+			target = 3C65A763063B3FA62508609068353B23 /* Pods-WaterStates_Example */;
+			targetProxy = C8A53E9DA9668E5181F6352E2A2B0DE9 /* PBXContainerItemProxy */;
+		};
+		819C150ED0A80478D0EE12A4DF3AEB43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "WaterStates-WaterStates";
+			target = 01E80848363B654A23543D9EB680073A /* WaterStates-WaterStates */;
+			targetProxy = 19FECCD606817404EBA6A2849B8CDA06 /* PBXContainerItemProxy */;
+		};
+		BAAC5E154C0A52F31E5254285C68BAB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WaterStates;
+			target = 59A3B751E00A87DEA0D21D0C383DDC13 /* WaterStates */;
+			targetProxy = B12818261AE33334291EDD166B890C75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1FA8BAE8DC02E5B3D526023A61AC0DA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2DECA47C6D33325B9F01E417EB82DEB /* Pods-WaterStates_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WaterStates_Tests/Pods-WaterStates_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WaterStates_Tests/Pods-WaterStates_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		44FF090EAAD28759C3CA764211655A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6CF866E60CE0BE12219FBD9E292FEBA /* WaterStates.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WaterStates/WaterStates-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WaterStates/WaterStates-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WaterStates/WaterStates.modulemap";
+				PRODUCT_MODULE_NAME = WaterStates;
+				PRODUCT_NAME = WaterStates;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		525B528362F26E3B2CAC0AEC9B706FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF2C0301FE65F2844CE320B75EA979E2 /* Pods-WaterStates_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WaterStates_Example/Pods-WaterStates_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WaterStates_Example/Pods-WaterStates_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6741CCF2C4B7C37BE965498351CD054C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6CF866E60CE0BE12219FBD9E292FEBA /* WaterStates.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WaterStates";
+				IBSC_MODULE = WaterStates;
+				INFOPLIST_FILE = "Target Support Files/WaterStates/ResourceBundle-WaterStates-WaterStates-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = WaterStates;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		7B6E45DE5D7F4C63347BACD253606591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7686F6E2ECBDAB943DCF9C8363A41A9E /* Pods-WaterStates_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WaterStates_Example/Pods-WaterStates_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WaterStates_Example/Pods-WaterStates_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B6A73FB1B6E834ABC06E8B654C5C8C77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 118BB0A7B5FA05E5A11238825D89239F /* Pods-WaterStates_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WaterStates_Tests/Pods-WaterStates_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WaterStates_Tests/Pods-WaterStates_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C21E0AA7FFC2F5E7DB09426E324E1278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6CF866E60CE0BE12219FBD9E292FEBA /* WaterStates.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WaterStates";
+				IBSC_MODULE = WaterStates;
+				INFOPLIST_FILE = "Target Support Files/WaterStates/ResourceBundle-WaterStates-WaterStates-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = WaterStates;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		E596EC95298BD6DA5C755E423BCDA000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6CF866E60CE0BE12219FBD9E292FEBA /* WaterStates.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WaterStates/WaterStates-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WaterStates/WaterStates-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WaterStates/WaterStates.modulemap";
+				PRODUCT_MODULE_NAME = WaterStates;
+				PRODUCT_NAME = WaterStates;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		112733C224688741DEE6BF7B1EAFE6DF /* Build configuration list for PBXNativeTarget "Pods-WaterStates_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FA8BAE8DC02E5B3D526023A61AC0DA1 /* Debug */,
+				B6A73FB1B6E834ABC06E8B654C5C8C77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A464255E15B156D6A5C9FF746301627 /* Build configuration list for PBXNativeTarget "Pods-WaterStates_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525B528362F26E3B2CAC0AEC9B706FCB /* Debug */,
+				7B6E45DE5D7F4C63347BACD253606591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		960831747495DC3C2DF40D79DAA0A3B5 /* Build configuration list for PBXNativeTarget "WaterStates-WaterStates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6741CCF2C4B7C37BE965498351CD054C /* Debug */,
+				C21E0AA7FFC2F5E7DB09426E324E1278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E13702FB67D8D95F6D4215D49A8EB243 /* Build configuration list for PBXNativeTarget "WaterStates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44FF090EAAD28759C3CA764211655A6F /* Debug */,
+				E596EC95298BD6DA5C755E423BCDA000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
