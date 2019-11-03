@@ -10,12 +10,13 @@ import UIKit
 
 public class LoadingView: UIView, NibLoadable, LoadingStateView {
 
-    // MARK: Overrides
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-    }
+    @IBOutlet weak var activityIndicator: UIView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var descriptionInfo: UILabel!
 
     public func configure() {
-
+        activityIndicator = WaterStatesConfig.loadingStyle.activityIndicator
+        descriptionInfo.text = WaterStatesConfig.loadingStyle.description
+        title.text = WaterStatesConfig.loadingStyle.title
     }
 }

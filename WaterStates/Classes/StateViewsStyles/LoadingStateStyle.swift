@@ -8,13 +8,12 @@
 
 import UIKit
 
-// MARK: StateViewStyle
 public struct LoadingStateStyle {
+
     var activityIndicator: UIView?
     var title: String?
     var description: String?
-    var buttons: [UIButton]
 
-    static let `default` = LoadingStateStyle(activityIndicator: UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge),
-                                             description: "Loading..", buttons: [])
+    static let `default` = LoadingStateStyle(activityIndicator: UIActivityIndicatorView(style: .whiteLarge),
+                                             title: "Loading...")
 }

@@ -18,8 +18,7 @@ public extension WaterStates where Self: UIViewController {
     func showError(_ error: Error?) {
         if errorView == nil {
             errorView = WaterStatesConfig.errorView
-            let output = getModuleInput(for: "output") as? ErrorStateDelegate
-            errorView?.delegate = output ?? self as? ErrorStateDelegate
+            errorView?.delegate = (self as? ErrorStateDelegate) ?? getModuleInput(for: "output") as? ErrorStateDelegate
         }
         guard let errorView = self.errorView else { return }
         errorView.configure(with: error)
@@ -41,22 +40,25 @@ public extension WaterStates where Self: UIViewController {
         loadingView?.hide()
     }
 
-    func showEmpty(_: String) {
-        if emptyView == nil { emptyView = WaterStatesConfig.emptyView }
+    func showEmpty(_ message: String?) {
+        if emptyView == nil {
+            emptyView = WaterStatesConfig.emptyView
+            emptyView?.delegate = (self as? EmptyStateDelegate) ?? getModuleInput(for: "output") as? EmptyStateDelegate
+        }
         guard let emptyView = self.emptyView else { return }
-        emptyView.configure()
+        emptyView.configure(with: message)
         emptyView.show(in: view)
     }
 
     func hideEmpty() {
         emptyView?.hide()
     }
+
+    func showContent(_: Any) { }
 }
 
-fileprivate extension UIViewController {
-
+internal extension UIViewController {
     func getModuleInput(for selectorName: String) -> Any? {
-
         let reflection = Mirror(reflecting: self).children
         var output: Any?
 

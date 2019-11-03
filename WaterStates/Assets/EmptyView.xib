@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,22 +15,22 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="fIj-is-dtW">
-                    <rect key="frame" x="32" y="262.5" width="350" height="371.5"/>
+                    <rect key="frame" x="32" y="286" width="350" height="324.5"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mNp-I4-1GE">
-                            <rect key="frame" x="26" y="0.0" width="298" height="292.5"/>
+                            <rect key="frame" x="20" y="0.0" width="310" height="245.5"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyIllustration" translatesAutoresizingMaskIntoConstraints="NO" id="JCC-Ha-hws">
-                                    <rect key="frame" x="0.0" y="0.0" width="298" height="216"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="310" height="169"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing to See Here!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsz-dK-141">
-                                    <rect key="frame" x="0.0" y="232" width="298" height="26.5"/>
+                                    <rect key="frame" x="0.0" y="185" width="310" height="26.5"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How about we start by adding a package?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ns7-dc-ieq">
-                                    <rect key="frame" x="0.0" y="274.5" width="298" height="18"/>
+                                    <rect key="frame" x="0.0" y="227.5" width="310" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -38,7 +38,7 @@
                             </subviews>
                         </stackView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcs-Rt-Rg0">
-                            <rect key="frame" x="112.5" y="330.5" width="125" height="41"/>
+                            <rect key="frame" x="112.5" y="283.5" width="125" height="41"/>
                             <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
                             <inset key="contentEdgeInsets" minX="38" minY="12" maxX="38" maxY="12"/>
@@ -50,6 +50,9 @@
                                     <integer key="value" value="16"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="retryButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="m4V-Iq-6Oo"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
@@ -61,10 +64,16 @@
                 <constraint firstItem="fIj-is-dtW" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="iBX-nB-d9Y"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="descriptionInfo" destination="ns7-dc-ieq" id="gtU-cw-pJX"/>
+                <outlet property="emptyImageView" destination="JCC-Ha-hws" id="yQK-nu-efU"/>
+                <outlet property="retryButton" destination="tcs-Rt-Rg0" id="jKT-pV-O1l"/>
+                <outlet property="title" destination="fsz-dK-141" id="Jno-ZO-1IN"/>
+            </connections>
             <point key="canvasLocation" x="139" y="125"/>
         </view>
     </objects>
     <resources>
-        <image name="emptyIllustration" width="298" height="216"/>
+        <image name="emptyIllustration" width="310" height="169"/>
     </resources>
 </document>

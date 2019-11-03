@@ -2,7 +2,7 @@ public class WeakAnyStateDisplayable<T>: StateDisplayable {
 
     private let _showLoading: (String) -> Void
     private let _hideLoading: () -> Void
-    private let _showEmpty: (String) -> Void
+    private let _showEmpty: (String?) -> Void
     private let _hideEmpty: () -> Void
     private let _showError: (Error?) -> Void
     private let _hideError: () -> Void
@@ -28,7 +28,7 @@ public class WeakAnyStateDisplayable<T>: StateDisplayable {
         _hideLoading()
     }
 
-    public func showEmpty(_ type: String) {
+    public func showEmpty(_ type: String?) {
         _showEmpty(type)
     }
 

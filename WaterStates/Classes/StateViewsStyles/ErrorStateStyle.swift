@@ -8,15 +8,15 @@
 
 import UIKit
 
-// MARK: StateViewStyle
 public struct ErrorStateStyle {
+
     var image: UIImage?
     var title: String?
     var description: String?
-    var buttons: [UIButton]
 
-    static let `default` = ErrorStateStyle(image: UIImage(named: "errorIllustration"),
+    static let `default` = ErrorStateStyle(image: UIImage(named: "errorIllustration",
+                                                          in: Bundle(for: ErrorView.self),
+                                                          compatibleWith: nil),
                                            title: "Error",
-                                           description: "Something bad happening. Might have to give it another go.",
-                                           buttons: [])
+                                           description: "Something went wrong.\nPlease try again.")
 }

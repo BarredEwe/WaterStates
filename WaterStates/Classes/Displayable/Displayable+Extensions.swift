@@ -9,11 +9,11 @@ public extension ContentDispayable {
 }
 
 public extension EmptyDisplayable {
-    func showEmpty(_: String) {}
+    func showEmpty(_ message: String?) { }
     func hideEmpty() {}
 }
 
 public extension ErrorDispayable {
-    func showError(_: Error) {}
+    func showError(_ error: Error?) { }
     func hideError() {}
 }

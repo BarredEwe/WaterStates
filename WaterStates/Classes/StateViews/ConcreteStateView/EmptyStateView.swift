@@ -9,5 +9,10 @@
 import Foundation
 
 public protocol EmptyStateView: StateView {
-    func configure()
+    var delegate: EmptyStateDelegate? { get set }
+    func configure(with message: String?)
+}
+
+public protocol EmptyStateDelegate: class {
+    func emptyActionTapped(with type: StateActionType)
 }

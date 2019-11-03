@@ -15,11 +15,13 @@ public class ErrorView: UIView, NibLoadable, ErrorStateView {
     @IBOutlet weak var errorImageView: UIImageView!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var descriptionInfo: UILabel!
-
+    @IBOutlet weak var retryButton: UIButton!
+    
     public func configure(with error: Error?) {
         descriptionInfo.text = error?.localizedDescription ?? WaterStatesConfig.errorStyle.description
         title.text = WaterStatesConfig.errorStyle.title
         errorImageView.image = WaterStatesConfig.errorStyle.image
+        retryButton.isHidden = delegate == nil
     }
 
     @IBAction func retryButtonTapped(_ sender: UIButton) {

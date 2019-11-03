@@ -5,7 +5,7 @@ public extension State {
     }
 
     static var empty: State {
-        return .empty("")
+        return .empty(nil)
     }
 
     static var error: State {
@@ -24,7 +24,7 @@ public extension State {
 
     @discardableResult func `do`(onLoading: ((String) -> Void)? = nil,
                                  onContent: ((T) -> Void)? = nil,
-                                 onEmpty: ((String) -> Void)? = nil,
+                                 onEmpty: ((String?) -> Void)? = nil,
                                  onError: ((Error?) -> Void)? = nil) -> State<T> {
         switch self {
         case let .loading(type): onLoading?(type)

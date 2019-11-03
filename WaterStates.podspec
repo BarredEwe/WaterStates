@@ -26,6 +26,7 @@ TODO: Add long description of the pod here.
   s.author           = { 'BarredEwe' => 'grishutin@bifit.com' }
   s.source           = { :git => 'https://github.com/BarredEwe/WaterStates.git', :tag => s.version.to_s }
 
+  s.swift_version = '5.0'
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'WaterStates/Classes/**/*'

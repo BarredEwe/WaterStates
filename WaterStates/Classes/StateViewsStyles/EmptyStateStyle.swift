@@ -8,15 +8,15 @@
 
 import UIKit
 
-// MARK: StateViewStyle
 public struct EmptyStateStyle {
+
     var image: UIImage?
     var title: String?
     var description: String?
-    var buttons: [UIButton]
 
-    static let `default` = EmptyStateStyle(image: UIImage(named: "emptyIllustration"),
+    static let `default` = EmptyStateStyle(image: UIImage(named: "emptyIllustration",
+                                                          in: Bundle(for: EmptyView.self),
+                                                          compatibleWith: nil),
                                            title: "Nothing to See Here!",
-                                           description: "How about we start by adding a package?",
-                                           buttons: [])
+                                           description: "This screen is empty.\nTo see something new, please update later.")
 }
