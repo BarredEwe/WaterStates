@@ -24,7 +24,7 @@ If you like the project, do not forget to `put star ⭐` and follow me on GitHub
 
 Swift `5.0`. Ready for use on iOS 9+
 
-## Usage
+## Quick Start
 
 Use the `WaterStates` protocol on the view controller and invoke the state you need using the `showState` method.
 
@@ -51,6 +51,10 @@ extension ExampleViewController: ErrorStateDelegate {
 }
 ```
 
+## Usage
+
+Will be added later 😕😕😕.
+
 ## Installation
 
 <details><summary>CocoaPods</summary>
@@ -67,7 +71,7 @@ pod 'WaterStates'
 
 <details><summary>Swift package manager</summary><p>
     
-Will be added later.
+Will be added later 😕😕😕.
 </p></details>  
 
 ## Author
