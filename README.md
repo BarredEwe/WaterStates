@@ -109,29 +109,31 @@ class ExamplePresenter: ExampleViewOutput {
 
 </p></details>  
 
-## Usage
+## Basic Usage
+
+### States
 
 To set the `state` in view, you need to call the `showState` method with the desired state:
 
-### Empty state
+- **Empty state**
 
 ```swift
 showState(.empty)
 ```
 
-### Error state
+- **Error state**
 
 ```swift
 showState(.error)
 ```
 
-### Loading state
+- **Loading state**
 
 ```swift
 showState(.loading)
 ```
 
-### Content state
+- **Content state**
 
 ```swift
 showState(.content(/* your content */))
