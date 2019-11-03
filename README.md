@@ -54,6 +54,59 @@ extension ExampleViewController: ErrorStateDelegate {
 }
 ```
 
+<details><summary>VIPER Quick Start</summary><p>
+
+You need to set the `showState` method in the `ViewInput` protocol:
+
+```swift
+import WaterStates
+
+protocol ExampleViewInput: class {
+    func showState(_ state: State<String>)
+}
+```
+    
+Use the `WaterStates` protocol on the view controller:
+
+```swift
+import UIKit
+import WaterStates
+
+class ExampleViewController: UIViewController, ExampleViewInput, WaterStates { }
+```
+
+In the `Presenter`, we set the view state using the `showState` method:
+
+```swift
+import WaterStates
+
+class ExamplePresenter: ExampleViewOutput {
+
+    weak var view: ViewControllerInput?
+
+    func someMethodd() {
+        view?.showState(.loading)
+    }
+}
+```
+
+For the action of the states, `ViewOutput` must correspond to a specific state delegate, for example: `ErrorStateDelegate`:
+
+```swift
+protocol ExampleViewOutput: ErrorStateDelegate { }
+
+class ExamplePresenter: ExampleViewOutput {
+
+    ...
+
+    func errorActionTapped(with type: StateActionType) {
+        // do something
+    }
+}
+```
+
+</p></details>  
+
 ## Usage
 
 Will be added later 😕😕😕.
