@@ -21,6 +21,8 @@ Simple and ready-made states for the view controller.
 
 Are you sure tired of writing the same code in all view controllers? Now you can easily and simply call up the necessary states for display, WaterStates will do the rest.
 
+Inside, a `state machine` is used that determines the delay and decides when to show, hide, or skip the state display.
+
 If you like the project, do not forget to `put star ⭐` and follow me on GitHub.
 
 ## Requirements
