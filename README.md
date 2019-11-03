@@ -109,6 +109,8 @@ class ExamplePresenter: ExampleViewOutput {
 
 ## Usage
 
+To set the `state` in view, you need to call the `showState` method with the desired state:
+
 ### Empty state
 
 ```swift
@@ -128,6 +130,10 @@ showState(.loading)
 ```
 
 ### Content state
+
+```swift
+showState(.content(/* your content */))
+```
 
 To use the content state, it is necessary to implement `showContent` method with a type that you need:
 
