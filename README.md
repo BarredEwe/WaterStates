@@ -7,12 +7,13 @@ Simple and ready-made states for the view controller.
 </H4>
 
 <p align="center">
-<a href="https://github.com/BarredEwe/WaterStates/releases/latest"><img alt="CocoaPods" src="https://img.shields.io/cocoapods/v/WaterStates.svg"/></a>
-<a href="https://developer.apple.com/swift"><img alt="Swift5" src="https://img.shields.io/badge/language-Swift5-orange.svg"/></a> 
-<a href="https://cocoapods.org/pods/WaterStates"><img alt="License" src="https://img.shields.io/cocoapods/l/WaterStates.svg"/></a>
-<a href="https://github.com/topics/viper-architecture?l=swift"><img alt="License" src=https://img.shields.io/badge/VIPER-compatible-green"/></a>
+<br>
 <a href="https://developer.apple.com/"><img alt="Platform" src="https://img.shields.io/badge/platform-iOS-green.svg"/></a>
-</p>
+<a href="https://cocoapods.org/pods/WaterStates"><img alt="License" src="https://img.shields.io/cocoapods/l/WaterStates.svg"/></a>
+<a href="https://github.com/BarredEwe/WaterStates/releases/latest"><img alt="CocoaPods" src="https://img.shields.io/cocoapods/v/WaterStates.svg"/></a>
+</br>
+<a href="https://developer.apple.com/swift"><img alt="Swift5" src="https://img.shields.io/badge/language-Swift5-orange.svg"/></a>
+<a href="https://github.com/topics/viper-architecture?l=swift"><img alt="" src=https://img.shields.io/badge/VIPER-compatible-green"/></a>
 
 ---
 
@@ -52,6 +53,59 @@ extension ExampleViewController: ErrorStateDelegate {
     }
 }
 ```
+
+<details><summary>VIPER Quick Start</summary><p>
+
+You need to set the `showState` method in the `ViewInput` protocol:
+
+```swift
+import WaterStates
+
+protocol ExampleViewInput: class {
+    func showState(_ state: State<String>)
+}
+```
+    
+Use the `WaterStates` protocol on the view controller:
+
+```swift
+import UIKit
+import WaterStates
+
+class ExampleViewController: UIViewController, ExampleViewInput, WaterStates { }
+```
+
+In the `Presenter`, we set the view state using the `showState` method:
+
+```swift
+import WaterStates
+
+class ExamplePresenter: ExampleViewOutput {
+
+    weak var view: ViewControllerInput?
+
+    func someMethodd() {
+        view?.showState(.loading)
+    }
+}
+```
+
+For the action of the states, `ViewOutput` must correspond to a specific state delegate, for example: `ErrorStateDelegate`:
+
+```swift
+protocol ExampleViewOutput: ErrorStateDelegate { }
+
+class ExamplePresenter: ExampleViewOutput {
+
+    ...
+
+    func errorActionTapped(with type: StateActionType) {
+        // do something
+    }
+}
+```
+
+</p></details>  
 
 ## Usage
 
