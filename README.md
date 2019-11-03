@@ -9,7 +9,6 @@ Simple and ready-made states for the view controller.
 <p align="center">
 <br>
 <a href="https://developer.apple.com/"><img alt="Platform" src="https://img.shields.io/badge/platform-iOS-green.svg"/></a>
-</p>
 <a href="https://cocoapods.org/pods/WaterStates"><img alt="License" src="https://img.shields.io/cocoapods/l/WaterStates.svg"/></a>
 <a href="https://github.com/BarredEwe/WaterStates/releases/latest"><img alt="CocoaPods" src="https://img.shields.io/cocoapods/v/WaterStates.svg"/></a>
 </br>
