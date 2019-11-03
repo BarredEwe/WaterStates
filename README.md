@@ -1,4 +1,6 @@
-# WaterStates
+<p align="center">
+<img src="Images/Logo.png" width=700>
+</p>
 
 <H4 align="center">
 Simple and ready-made states for the view controller.
