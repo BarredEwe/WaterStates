@@ -21,7 +21,7 @@ Simple and ready-made states for the view controller.
 
 Are you sure tired of writing the same code in all view controllers? Now you can easily and simply call up the necessary states for display, WaterStates will do the rest.
 
-If you like the project, do not forget to `put star ⭐` and follow me on GitHub:
+If you like the project, do not forget to `put star ⭐` and follow me on GitHub.
 
 ## Requirements
 
@@ -40,11 +40,6 @@ class ExampleViewController: UIViewController, WaterStates {
     override func viewDidLoad() {
         super.viewDidLoad()
         showState(.loading)
-    }
-    
-    // Content type must be your view model, for example - String
-    func showContent(_ content: String) {
-        // do something with your view model
     }
 }
 ```
@@ -67,7 +62,7 @@ You need to set the `showState` method in the `ViewInput` protocol:
 import WaterStates
 
 protocol ExampleViewInput: class {
-    func showState(_ state: State<String>)
+    func showState(_ state: DefaultState)
 }
 ```
     
@@ -77,12 +72,7 @@ Use the `WaterStates` protocol on the view controller:
 import UIKit
 import WaterStates
 
-class ExampleViewController: UIViewController, ExampleViewInput, WaterStates { 
-    // Content type must be your view model, for example - String
-    func showContent(_ content: String) {
-        // do something with your view model
-    }
-}
+class ExampleViewController: UIViewController, ExampleViewInput, WaterStates { }
 ```
 
 In the `Presenter`, we set the view state using the `showState` method:
@@ -119,7 +109,46 @@ class ExamplePresenter: ExampleViewOutput {
 
 ## Usage
 
-Will be added later 😕😕😕.
+### Empty state
+
+```swift
+showState(.empty)
+```
+
+### Error state
+
+```swift
+showState(.error)
+```
+
+### Loading state
+
+```swift
+showState(.loading)
+```
+
+### Content state
+
+To use the content state, it is necessary to implement `showContent` method with a type that you need:
+
+```swift
+// Content type must be your view model, for example - String
+func showContent(_ content: String) {
+    // do something with your content
+}
+```
+
+If you do not need data for the state of the content, it should be pointed `DefaultState` type - `Any`:
+
+```swift
+func showContent(_ content: Any) {
+    // do something
+}
+```
+
+### Configarations
+
+The rest will be added in the near future 😉!
 
 ## Installation
 
@@ -137,7 +166,7 @@ pod 'WaterStates'
 
 <details><summary>Swift package manager</summary><p>
     
-Will be added later 😕😕😕.
+Will be added later 😉.
 </p></details>  
 
 ## Author
