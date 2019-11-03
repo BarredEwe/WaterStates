@@ -25,7 +25,7 @@ If you like the project, do not forget to `put star ⭐` and follow me on GitHub
 
 ## Requirements
 
-Swift `5.0`. Ready for use on iOS 9+
+Xcode `11.0`+, Swift `5.0`+. Ready for use on iOS 9+
 
 ## Quick Start
 
@@ -137,8 +137,7 @@ func showContent(_ content: String) {
     // do something with your content
 }
 ```
-
-If you do not need data for the state of the content, it should be pointed `DefaultState` type - `Any`:
+If you do not need data for the content state, you can not implement the `showContent` method or you can specify the type of content in the `showContent` method, as in `DefaultState` - `Any`:
 
 ```swift
 func showContent(_ content: Any) {
