@@ -17,20 +17,52 @@ Simple and ready-made states for the view controller.
 
 Are you sure tired of writing the same code in all view controllers? Now you can easily and simply call up the necessary states for display, WaterStates will do the rest.
 
-## Example
+If you like the project, do not forget to `put star ★` and follow me on GitHub:
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+// IMAGES
 
 ## Requirements
 
+Swift `5.0`. Ready for use on iOS 9+
+
+## Usage
+
+Use the `WaterStates` protocol on the view controller and invoke the state you need using the `showState` method.
+
+```swift
+import UIKit
+import WaterStates
+
+class ViewController: UIViewController, WaterStates {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        showState(.loading)
+    }
+}
+```
+
 ## Installation
 
+<details><summary>CocoaPods</summary>
+<p>
+  
 WaterStates is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'WaterStates'
 ```
+</p>  
+</details>
+
+<details><summary>Swift package manager</summary>
+<p>
+  
+Will be added later
+  
+</p>
+</details>  
 
 ## Author
 
@@ -38,4 +70,4 @@ BarredEwe, grishutin@bifit.com
 
 ## License
 
-WaterStates is available under the MIT license. See the LICENSE file for more info.
+`WaterStates` is available under the MIT license. See the LICENSE file for more info.
