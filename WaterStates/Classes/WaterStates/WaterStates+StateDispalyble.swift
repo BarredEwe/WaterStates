@@ -19,7 +19,7 @@ public extension WaterStates where Self: UIViewController {
         if errorView == nil {
             errorView = WaterStatesConfig.errorView
             let output = getModuleInput(for: "output") as? ErrorStateDelegate
-            errorView?.delegate = output
+            errorView?.delegate = output ?? self as? ErrorStateDelegate
         }
         guard let errorView = self.errorView else { return }
         errorView.configure(with: error)
