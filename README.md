@@ -4,6 +4,8 @@
 
 <H4 align="center">
 Simple and ready-made states for the view controller.
+    
+The project is at an early stage of development!
 </H4>
 
 <p align="center">
