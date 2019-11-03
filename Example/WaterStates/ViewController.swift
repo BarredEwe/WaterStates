@@ -47,7 +47,7 @@ class ViewController: UIViewController, ViewControllerInput, WaterStates {
         output.viewIsReady()
     }
 
-    func showContent(_ contnet: String) {
+    func showContent(_ content: String) {
 
     }
 }
