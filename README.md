@@ -41,6 +41,11 @@ class ExampleViewController: UIViewController, WaterStates {
         super.viewDidLoad()
         showState(.loading)
     }
+    
+    // Content type must be your view model, for example - String
+    func showContent(_ content: String) {
+        // do something with your view model
+    }
 }
 ```
 
@@ -72,7 +77,12 @@ Use the `WaterStates` protocol on the view controller:
 import UIKit
 import WaterStates
 
-class ExampleViewController: UIViewController, ExampleViewInput, WaterStates { }
+class ExampleViewController: UIViewController, ExampleViewInput, WaterStates { 
+    // Content type must be your view model, for example - String
+    func showContent(_ content: String) {
+        // do something with your view model
+    }
+}
 ```
 
 In the `Presenter`, we set the view state using the `showState` method:
