@@ -1,6 +1,0 @@
-framework module WaterStates {
-  umbrella header "WaterStates-umbrella.h"
-
-  export *
-  module * { export * }
-}
