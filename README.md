@@ -27,9 +27,9 @@ Are you sure tired of writing the same code in all view controllers? Now you can
 Inside, a `state machine` is used that determines the delay and decides when to show, hide, or skip the state display.
 
 <p align="center">
-    <img src="Resources/Empty.png" width="270">
-    <img src="Resources/Loading.png" width="270">
-    <img src="Resources/Error.png" width="270">
+    <img src="Resources/Empty.png" width="288">
+    <img src="Resources/Loading.png" width="288">
+    <img src="Resources/Error.png" width="288">
 </p>
 
 If you like the project, do not forget to `put star ⭐` and follow me on GitHub.
