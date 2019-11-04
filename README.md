@@ -202,7 +202,7 @@ Will be added later 😉.
 
 ## Author
 
-BarredEwe, grishutin@bifit.com
+<img align="left" src="https://avatars.githubusercontent.com/barredewe?s=88&v=4" width="26">BarredEwe, grishutin@bifit.com
 
 ---
 
