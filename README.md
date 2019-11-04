@@ -12,6 +12,7 @@ The project is at an early stage of development!
 <br>
 <a href="https://developer.apple.com/"><img alt="Platform" src="https://img.shields.io/badge/platform-iOS-green.svg"/></a>
 <a href="https://cocoapods.org/pods/WaterStates"><img alt="License" src="https://img.shields.io/cocoapods/l/WaterStates.svg"/></a>
+<a href="https://www.codefactor.io/repository/github/barredewe/waterstates"><img src="https://www.codefactor.io/repository/github/barredewe/waterstates/badge?s=661189c90207b4f0354f90d1375b6e15c958d26d" alt="CodeFactor" /></a>
 <a href="https://github.com/BarredEwe/WaterStates/releases/latest"><img alt="CocoaPods" src="https://img.shields.io/cocoapods/v/WaterStates.svg"/></a>
 </br>
 <a href="https://developer.apple.com/swift"><img alt="Swift5" src="https://img.shields.io/badge/language-Swift5-orange.svg"/></a>
