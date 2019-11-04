@@ -37,7 +37,11 @@ If you like the project, do not forget to `put star ⭐` and follow me on GitHub
 
 ## Requirements
 
-Xcode `11.0`+, Swift `5.0`+. Ready for use on iOS 9+
+- <img align="left" src="https://developer.apple.com/assets/elements/icons/xcode/xcode-64x64_2x.png" width="26">Xcode `11.0`+
+
+- <img align="left" src="https://developer.apple.com/assets/elements/icons/swift/swift-64x64_2x.png" width="26">Swift `5.0`+
+
+- <img align="left" src="https://developer.apple.com/assets/elements/icons/app-store/app-store-64x64.png" width="26">Ready for use on `iOS 9`+
 
 ---
 
