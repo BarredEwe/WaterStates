@@ -33,9 +33,13 @@ Inside, a `state machine` is used that determines the delay and decides when to 
 
 If you like the project, do not forget to `put star ⭐` and follow me on GitHub.
 
+---
+
 ## Requirements
 
 Xcode `11.0`+, Swift `5.0`+. Ready for use on iOS 9+
+
+---
 
 ## Quick Start
 
@@ -115,7 +119,9 @@ class ExamplePresenter: ExampleViewOutput {
 }
 ```
 
-</p></details>  
+</p></details>
+
+---
 
 ## Basic Usage
 
@@ -167,6 +173,8 @@ func showContent(_ content: Any) {
 
 The rest will be added in the near future 😉!
 
+---
+
 ## Installation
 
 <details><summary>CocoaPods</summary>
@@ -184,11 +192,15 @@ pod 'WaterStates'
 <details><summary>Swift package manager</summary><p>
     
 Will be added later 😉.
-</p></details>  
+</p></details>
+
+---
 
 ## Author
 
 BarredEwe, grishutin@bifit.com
+
+---
 
 ## License
 
