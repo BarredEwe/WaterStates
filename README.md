@@ -1,5 +1,5 @@
 <p align="center">
-<img src="Images/Logo.png" width=700>
+<img src="Resources/Logo.png" width=700>
 </p>
 
 <H4 align="center">
