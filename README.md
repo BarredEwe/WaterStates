@@ -20,7 +20,7 @@ The project is at an early stage of development!
 
 ---
 
-<img align="right" src="Resources/Example.gif" height="360">
+<img align="right" src="Resources/Example.gif" height="440">
 
 ## Introduction
 
@@ -137,6 +137,9 @@ enum State<T> {
     case error(Error?)
     case empty(String?)
 }
+
+// state for example: .loading
+showState(.loading)
 ```
 
 <img align="left" src="Resources/Empty.png" width="288">
