@@ -33,8 +33,10 @@ extension DisplaybleView where Self: UIView {
             return
         }
 
+        transform = CGAffineTransform.identity.scaledBy(x: 0.9, y: 0.9)
         UIView.transition(with: view, duration: 0.25, options: [.transitionCrossDissolve], animations: {
             addSubview()
+            self.transform = .identity
         }, completion: completion)
     }
 
