@@ -20,7 +20,7 @@ The project is at an early stage of development!
 
 ---
 
-<img align="right" src="Resources/Example.gif" height="440">
+<img align="right" src="https://github.com/BarredEwe/WaterStates/blob/master/Resources/Example.gif" height="440">
 
 ## Introduction
 
@@ -142,7 +142,7 @@ enum State<T> {
 showState(.loading)
 ```
 
-<img align="left" src="Resources/Empty.png" width="288">
+<img align="left" src="https://github.com/BarredEwe/WaterStates/blob/master/Resources/Empty.png" width="288">
 <br><br><br>
 
 **Empty state**
@@ -151,7 +151,7 @@ showState(.loading)
 showState(.empty)
 ```
 <br><br><br><br><br><br>
-<img align="left" src="Resources/Error.png" width="288">
+<img align="left" src="https://github.com/BarredEwe/WaterStates/blob/master/Resources/Error.png" width="288">
 <br><br><br>
 
 
@@ -162,7 +162,7 @@ showState(.error)
 ```
 
 <br><br><br><br><br><br>
-<img align="left" src="Resources/Loading.png" width="288">
+<img align="left" src="https://github.com/BarredEwe/WaterStates/blob/master/Resources/Loading.png" width="288">
 <br><br><br>
 
 **Loading state**
