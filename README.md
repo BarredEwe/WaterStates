@@ -134,6 +134,15 @@ class ExamplePresenter: ExampleViewOutput {
 
 To set the `state` in view, you need to call the `showState` method with the desired state:
 
+```swift
+enum State<T> {
+    case loading(String)
+    case content(T)
+    case error(Error?)
+    case empty(String?)
+}
+```
+
 - **Empty state**
 
 ```swift
