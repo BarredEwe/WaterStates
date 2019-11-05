@@ -143,25 +143,38 @@ enum State<T> {
 }
 ```
 
-- **Empty state**
+<img align="left" src="Resources/Empty.png" width="288">
+<br><br><br>
+
+**Empty state**
 
 ```swift
 showState(.empty)
 ```
+<br><br><br><br><br><br>
+<img align="left" src="Resources/Error.png" width="288">
+<br><br><br>
 
-- **Error state**
+
+**Error state**
 
 ```swift
 showState(.error)
 ```
 
-- **Loading state**
+<br><br><br><br><br><br>
+<img align="left" src="Resources/Loading.png" width="288">
+<br><br><br>
+
+**Loading state**
 
 ```swift
 showState(.loading)
 ```
 
-- **Content state**
+<br><br><br><br>
+
+**Content state**
 
 ```swift
 showState(.content(/* your content */))
