@@ -20,13 +20,13 @@ The project is at an early stage of development!
 
 ---
 
-<img align="right" src="https://github.com/BarredEwe/WaterStates/blob/master/Resources/Example.gif" height="440">
+<img align="right" src="https://github.com/BarredEwe/WaterStates/blob/master/Resources/Example.gif" height="440" width="288">
 
 ## Introduction
 
 Are you sure tired of writing the same code in all view controllers? Now you can easily and simply call up the necessary states for display, WaterStates will do the rest.
 
-Inside, a `state machine` is used that determines the delay and decides when to show, hide, or skip the state display.
+Inside, a `state machine`(Inspired by [MasterWatcher](https://github.com/MasterWatcher)) is used that determines the delay and decides when to show, hide, or skip the state display.
 
 If you like the project, do not forget to `put star ⭐` and follow me on GitHub.
 
