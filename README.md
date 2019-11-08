@@ -26,7 +26,7 @@ The project is at an early stage of development!
 
 Are you sure tired of writing the same code in all view controllers? Now you can easily and simply call up the necessary states for display, WaterStates will do the rest.
 
-Inside, a `state machine`(Inspired by [MasterWatcher](https://github.com/MasterWatcher)) is used that determines the delay and decides when to show, hide, or skip the state display.
+Inside, a `state machine`(Inspired by [MasterWatcher](https://github.com/MasterWatcher)) is used to that determines the delay and decides when to show, hide, or skip the state display.
 
 If you like the project, do not forget to `put star ⭐` and follow me on GitHub.
 
@@ -187,7 +187,7 @@ func showContent(_ content: String) {
     // do something with your content
 }
 ```
-If you do not need data for the content state, you can not implement the `showContent` method or you can specify the type of content in the `showContent` method, as in `DefaultState` - `Any`:
+If you do not need data for the content state, you cannot implement the `showContent` method, or you can specify the type of content in the `showContent` method, as in `DefaultState` - `Any`:
 
 ```swift
 func showContent(_ content: Any) {
