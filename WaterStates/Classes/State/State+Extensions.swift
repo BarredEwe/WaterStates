@@ -1,18 +1,20 @@
+import Foundation
+
 public extension State {
 
     static var loading: State {
-        return .loading("")
+        return .loading(StateInfo())
     }
 
     static var empty: State {
-        return .empty(nil)
+        return .empty(StateInfo())
     }
 
     static var error: State {
-        return .error(nil)
+        return .error(StateInfo())
     }
 
-    func set(loading: String? = nil, content: T? = nil, empty: String? = nil, error: Error? = nil) -> State {
+    func set(loading: StateInfo? = nil, content: T? = nil, empty: StateInfo? = nil, error: StateInfo? = nil) -> State {
         switch (self, loading, content, empty, error) {
         case (.loading, let .some(type), _, _, _): return .loading(type)
         case (.content, _, let .some(value), _, _): return .content(value)
@@ -22,10 +24,10 @@ public extension State {
         }
     }
 
-    @discardableResult func `do`(onLoading: ((String) -> Void)? = nil,
+    @discardableResult func `do`(onLoading: ((StateInfo) -> Void)? = nil,
                                  onContent: ((T) -> Void)? = nil,
-                                 onEmpty: ((String?) -> Void)? = nil,
-                                 onError: ((Error?) -> Void)? = nil) -> State<T> {
+                                 onEmpty: ((StateInfo) -> Void)? = nil,
+                                 onError: ((StateInfo) -> Void)? = nil) -> State<T> {
         switch self {
         case let .loading(type): onLoading?(type)
         case let .content(value): onContent?(value)

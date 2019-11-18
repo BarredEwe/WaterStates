@@ -1,10 +1,3 @@
-//
-//  EmptyCondition.swift
-//  StateOfMind
-//
-//  Created by goncharov on 19/10/2018.
-//
-
 open class EmptyCondition: Condition {
 
     public var delayedTransition: DelayedTransition?

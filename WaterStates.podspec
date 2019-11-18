@@ -8,17 +8,15 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WaterStates'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of WaterStates.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '0.2.0'
+  s.summary          = 'Simple and ready-made states for the view controller'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    Are you sure tired of writing the same code in all view controllers? Now you can easily and simply call up the necessary states for display, WaterStates will do the rest.
+
+    Inside, a StateMachine is used that determines the delay and decides when to show, hide, or skip the state display.
+
+    Instructions for installation are in [the README](https://github.com/BarredEwe/WaterStates).
                        DESC
 
   s.homepage         = 'https://github.com/BarredEwe/WaterStates'

@@ -1,3 +1,5 @@
+import Foundation
+
 open class StateMachine<T> {
 
     public let displayable: WeakAnyStateDisplayable<T>

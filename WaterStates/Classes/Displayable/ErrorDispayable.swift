@@ -1,4 +1,4 @@
 public protocol ErrorDispayable {
-    func showError(_: Error?)
+    func showError(_ info: StateInfo)
     func hideError()
 }

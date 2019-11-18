@@ -1,10 +1,10 @@
 public class WeakAnyStateDisplayable<T>: StateDisplayable {
 
-    private let _showLoading: (String) -> Void
+    private let _showLoading: (StateInfo) -> Void
     private let _hideLoading: () -> Void
-    private let _showEmpty: (String?) -> Void
+    private let _showEmpty: (StateInfo) -> Void
     private let _hideEmpty: () -> Void
-    private let _showError: (Error?) -> Void
+    private let _showError: (StateInfo) -> Void
     private let _hideError: () -> Void
     private let _showContent: (T) -> Void
     private let _hideContent: () -> Void
@@ -20,24 +20,24 @@ public class WeakAnyStateDisplayable<T>: StateDisplayable {
         _hideContent = { [weak statable] in return statable?.hideContent() }
     }
 
-    public func showLoading(_ type: String) {
-        _showLoading(type)
+    public func showLoading(_ info: StateInfo) {
+        _showLoading(info)
     }
 
     public func hideLoading() {
         _hideLoading()
     }
 
-    public func showEmpty(_ type: String?) {
-        _showEmpty(type)
+    public func showEmpty(_ info: StateInfo) {
+        _showEmpty(info)
     }
 
     public func hideEmpty() {
         _hideEmpty()
     }
 
-    public func showError(_ error: Error?) {
-        _showError(error)
+    public func showError(_ info: StateInfo) {
+        _showError(info)
     }
 
     public func hideError() {

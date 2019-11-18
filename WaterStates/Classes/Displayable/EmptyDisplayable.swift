@@ -1,4 +1,4 @@
 public protocol EmptyDisplayable {
-    func showEmpty(_: String?)
+    func showEmpty(_ info: StateInfo)
     func hideEmpty()
 }

@@ -62,7 +62,7 @@ class ExampleViewController: UIViewController, WaterStates {
 For the action of the states, you need to correspond to a delegate of a certain state, for example: `ErrorStateDelegate`.
 
 ```swift
-extension ExampleViewController: ErrorStateDelegate {
+extension ExampleViewController: WaterStateDelegate {
     func errorActionTapped(with type: StateActionType) {
         // do something
     }
@@ -108,7 +108,7 @@ class ExamplePresenter: ExampleViewOutput {
 For the action of the states, `ViewOutput` must correspond to a specific state delegate, for example: `ErrorStateDelegate`:
 
 ```swift
-protocol ExampleViewOutput: ErrorStateDelegate { }
+protocol ExampleViewOutput: WaterStateDelegate { }
 
 class ExamplePresenter: ExampleViewOutput {
 
@@ -131,11 +131,11 @@ class ExamplePresenter: ExampleViewOutput {
 To set the `state` in view, you need to call the `showState` method with the desired state:
 
 ```swift
-enum State<T> {
-    case loading(String)
+public enum State<T> {
+    case loading(StateInfo)
     case content(T)
-    case error(Error?)
-    case empty(String?)
+    case error(StateInfo)
+    case empty(StateInfo)
 }
 
 // state for example: .loading

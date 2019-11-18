@@ -1,8 +1,11 @@
+import Foundation
+
+/// Main conditions
 public enum State<T> {
-    case loading(String)
+    case loading(StateInfo)
     case content(T)
-    case error(Error?)
-    case empty(String?)
+    case error(StateInfo)
+    case empty(StateInfo)
 }
 
 public typealias DefaultState = State<Any>

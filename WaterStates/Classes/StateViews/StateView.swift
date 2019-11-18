@@ -1,19 +1,5 @@
-//
-//  StateView.swift
-//  WaterStates_Example
-//
-//  Created by Максим Гришутин on 01.11.2019.
-//  Copyright © 2019 CocoaPods. All rights reserved.
-//
-
 import UIKit
 
-public protocol StateView: UIView, DisplaybleView { }
-
-// MARK: ContentType
-typealias ListModel = [String]
-
-enum ContentType<T> {
-    case table(ListModel)
-    case custom(T)
+public protocol StateView: UIView, DisplaybleView {
+    func configure(with title: String?, description: String?)
 }

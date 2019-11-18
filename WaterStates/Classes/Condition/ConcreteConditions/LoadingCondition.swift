@@ -1,9 +1,4 @@
-//
-//  LoadingCondition.swift
-//  StateOfMind
-//
-//  Created by goncharov on 19/10/2018.
-//
+import Foundation
 
 open class LoadingCondition: Condition {
 

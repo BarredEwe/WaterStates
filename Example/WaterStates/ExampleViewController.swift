@@ -9,53 +9,43 @@
 import UIKit
 import WaterStates
 
-protocol ExampleViewInput: class {
-    func showState(_ state: DefaultState)
-}
+class ExampleViewController: UIViewController, WaterStates {
 
-protocol ExampleViewOutput: ErrorStateDelegate, EmptyStateDelegate {
-    func viewIsReady()
-}
-
-class ExamplePresenter: ExampleViewOutput {
-
-    weak var view: ExampleViewInput?
-
-    func viewIsReady() {
-        view?.showState(.loading)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.view?.showState(.error)
+    var errorView: WaterStateView? {
+        get {
+            let stateView = WaterStateView()
+            stateView.titleView = UIImageView(image: UIImage(named: "errorIllustration",
+                                                             in: Bundle(for: WaterStateView.self),
+                                                             compatibleWith: nil))
+            stateView.title = "Example ERROR"
+            stateView.descriptionInfo = "Something went wrong.\nPlease try again."
+            stateView.buttonTitle = "Retry?"
+            return stateView
         }
     }
-
-    // MARK: ErrorStateDelegate
-    func errorActionTapped(with type: StateActionType) {
-        view?.showState(.loading)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.view?.showState(.empty)
-        }
-    }
-
-    // MARK: EmptyStateDelegate
-    func emptyActionTapped(with type: StateActionType) {
-        view?.showState(.loading)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.view?.showState(.error)
-        }
-    }
-}
-
-class ExampleViewController: UIViewController, ExampleViewInput, WaterStates {
-
-    var output: ExampleViewOutput!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        showState(.loading)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.showState(.error)
+        }
+    }
+}
 
-        let presenter = ExamplePresenter()
-        presenter.view = self
-        output = presenter
+extension ExampleViewController: WaterStateDelegate {
+    
+    func errorActionTapped(with type: StateActionType) {
+        showState(.loading)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.showState(.empty)
+        }
+    }
 
-        output.viewIsReady()
+    func emptyActionTapped(with type: StateActionType) {
+        showState(.loading)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.showState(.error)
+        }
     }
 }

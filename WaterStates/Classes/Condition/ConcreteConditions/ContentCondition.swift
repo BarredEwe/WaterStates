@@ -11,13 +11,13 @@ open class ContentCondition: Condition {
 
     public func setState<T>(_ state: State<T>, with stateMachine: StateMachine<T>) {
         switch state {
-        case let .loading(type):
+        case let .loading(info):
             delayedTransition?.cancel()
             if isFirstLoadingTransition {
-                transitionToLoading(stateMachine: stateMachine, type: type)
+                transitionToLoading(stateMachine: stateMachine, info: info)
             } else {
                 performDelayedTransition(delay: delay) { [weak self] in
-                    self?.transitionToLoading(stateMachine: stateMachine, type: type)
+                    self?.transitionToLoading(stateMachine: stateMachine, info: info)
                 }
             }
             isFirstLoadingTransition = false
@@ -25,22 +25,22 @@ open class ContentCondition: Condition {
             delayedTransition?.cancel()
             stateMachine.displayable.hideContent()
             stateMachine.displayable.showContent(value)
-        case let .empty(type):
+        case let .empty(info):
             delayedTransition?.cancel()
             stateMachine.displayable.hideContent()
-            stateMachine.displayable.showEmpty(type)
+            stateMachine.displayable.showEmpty(info)
             stateMachine.condition = stateMachine.emptyCondition
-        case let .error(value):
+        case let .error(info):
             delayedTransition?.cancel()
             stateMachine.displayable.hideContent()
-            stateMachine.displayable.showError(value)
+            stateMachine.displayable.showError(info)
             stateMachine.condition = stateMachine.errorCondition
         }
     }
 
-    private func transitionToLoading<T>(stateMachine: StateMachine<T>, type: String) {
+    private func transitionToLoading<T>(stateMachine: StateMachine<T>, info: StateInfo) {
         stateMachine.displayable.hideContent()
-        stateMachine.displayable.showLoading(type)
+        stateMachine.displayable.showLoading(info)
         stateMachine.condition = stateMachine.loadingCondition
     }
 }

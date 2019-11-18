@@ -1,18 +1,14 @@
-//
-//  WaterStates.swift
-//  WaterStates_Example
-//
-//  Created by Максим Гришутин on 01.11.2019.
-//  Copyright © 2019 CocoaPods. All rights reserved.
-//
-
 import UIKit
 
 public protocol WaterStates: StateDisplayable {
     func showState(_ state: State<ContentType>)
+
+    var errorView: WaterStateView? { get }
+    var loadingView: WaterStateView? { get }
+    var emptyView: WaterStateView? { get }
 }
 
-extension WaterStates where Self: UIViewController {
+public extension WaterStates where Self: UIViewController {
 
     internal var stateMachine: StateMachine<ContentType>? {
         get {
@@ -23,27 +19,27 @@ extension WaterStates where Self: UIViewController {
         }
     }
 
-    var errorView: ErrorStateView? {
+    var errorView: WaterStateView? {
         get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.errorView) as? ErrorStateView
+            return objc_getAssociatedObject(self, &AssociatedKeys.errorView) as? WaterStateView
         }
         set(newValue) {
             return objc_setAssociatedObject(self, &AssociatedKeys.errorView, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
 
-    var loadingView: LoadingStateView? {
+    var loadingView: WaterStateView? {
         get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.loadingView) as? LoadingView
+            return objc_getAssociatedObject(self, &AssociatedKeys.loadingView) as? WaterStateView
         }
         set(newValue) {
             return objc_setAssociatedObject(self, &AssociatedKeys.loadingView, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
 
-    var emptyView: EmptyStateView? {
+    var emptyView: WaterStateView? {
         get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.emptyView) as? EmptyView
+            return objc_getAssociatedObject(self, &AssociatedKeys.emptyView) as? WaterStateView
         }
         set(newValue) {
             return objc_setAssociatedObject(self, &AssociatedKeys.emptyView, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
@@ -51,9 +47,9 @@ extension WaterStates where Self: UIViewController {
     }
 }
 
-public struct AssociatedKeys {
-    public static var stateMachine = "AssociatedKeys.stateMachine"
-    public static var errorView = "AssociatedKeys.errorView"
-    public static var loadingView = "AssociatedKeys.loadingView"
-    public static var emptyView = "AssociatedKeys.emptyView"
+internal struct AssociatedKeys {
+    static var stateMachine = "AssociatedKeys.stateMachine"
+    static var errorView = "AssociatedKeys.errorView"
+    static var loadingView = "AssociatedKeys.loadingView"
+    static var emptyView = "AssociatedKeys.emptyView"
 }
