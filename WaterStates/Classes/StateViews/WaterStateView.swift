@@ -15,7 +15,7 @@ public class WaterStateView: UIView, StateView {
     public var descriptionInfo: String?
     public var buttonTitle: String?
 
-    public weak var delegate: WaterStateDelegate?
+    public weak var delegate: WaterStatesDelegate?
 
     // Stack view constraints
     private var stackLeadingConstraint: NSLayoutConstraint!

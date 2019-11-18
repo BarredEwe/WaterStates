@@ -6,7 +6,7 @@ public extension WaterStates where Self: UIViewController {
         if errorView == nil { errorView = WaterStatesConfig.errorView }
         guard let errorView = self.errorView else { return }
         if errorView.delegate == nil {
-            errorView.delegate = (self as? WaterStateDelegate) ?? getModuleInput(for: "output") as? WaterStateDelegate
+            errorView.delegate = (self as? WaterStatesDelegate) ?? getModuleInput(for: "output") as? WaterStatesDelegate
         }
         errorView.type = .error
         errorView.configure(with: info.title, description: info.description)
@@ -33,7 +33,7 @@ public extension WaterStates where Self: UIViewController {
         if emptyView == nil { emptyView = WaterStatesConfig.emptyView }
         guard let emptyView = self.emptyView else { return }
         if emptyView.delegate == nil {
-            emptyView.delegate = (self as? WaterStateDelegate) ?? getModuleInput(for: "output") as? WaterStateDelegate
+            emptyView.delegate = (self as? WaterStatesDelegate) ?? getModuleInput(for: "output") as? WaterStatesDelegate
         }
         emptyView.type = .empty
         emptyView.configure(with: info.title, description: info.description)

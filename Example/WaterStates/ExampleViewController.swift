@@ -33,7 +33,7 @@ class ExampleViewController: UIViewController, WaterStates {
     }
 }
 
-extension ExampleViewController: WaterStateDelegate {
+extension ExampleViewController: WaterStatesDelegate {
     
     func errorActionTapped(with type: StateActionType) {
         showState(.loading)

@@ -16,4 +16,4 @@ public extension ErrorStateDelegate {
     func errorActionTapped(with type: StateActionType) { }
 }
 
-public protocol WaterStateDelegate: EmptyStateDelegate, ErrorStateDelegate { }
+public protocol WaterStatesDelegate: EmptyStateDelegate, ErrorStateDelegate { }
