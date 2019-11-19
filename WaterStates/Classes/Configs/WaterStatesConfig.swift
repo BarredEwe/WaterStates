@@ -6,12 +6,21 @@
 //  Copyright © 2019 CocoaPods. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 /// The main configuration of the WaterStates
-public struct WaterStatesConfig {
+public class WaterStatesConfig {
 
-    public static var errorView: WaterStateView {
+    public static var errorView: WaterStateView = defaultErrorView
+    public static var loadingView: WaterStateView = defaultLoadingView
+    public static var emptyView: WaterStateView = defaultEmptyView
+
+    public static var loadingDefaultDelay: TimeInterval = 0.1
+    public static var loadingDefaultMinPresentationTime: TimeInterval = 0.2
+}
+
+extension WaterStatesConfig {
+    internal static var defaultErrorView: WaterStateView {
         let stateView = WaterStateView()
         stateView.titleView = UIImageView(image: UIImage(named: "errorIllustration",
                                                          in: Bundle(for: WaterStateView.self),
@@ -21,7 +30,8 @@ public struct WaterStatesConfig {
         stateView.buttonTitle = "Retry"
         return stateView
     }
-    public static var loadingView: WaterStateView {
+
+    internal static var defaultLoadingView: WaterStateView {
         let stateView = WaterStateView()
         let activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
         activityIndicator.color = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
@@ -30,7 +40,8 @@ public struct WaterStatesConfig {
         stateView.title = "Loading..."
         return stateView
     }
-    public static var emptyView: WaterStateView {
+
+    internal static var defaultEmptyView: WaterStateView {
         let stateView = WaterStateView()
         stateView.titleView = UIImageView(image: UIImage(named: "emptyIllustration",
                                                          in: Bundle(for: WaterStateView.self),
@@ -40,7 +51,4 @@ public struct WaterStatesConfig {
         stateView.buttonTitle = "Reload"
         return stateView
     }
-
-    public static var loadingDefaultDelay: TimeInterval = 0.1
-    public static var loadingDefaultMinPresentationTime: TimeInterval = 0.2
 }
