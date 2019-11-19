@@ -17,6 +17,7 @@ The project is at an early stage of development!
 </br>
 <a href="https://developer.apple.com/swift"><img alt="Swift5" src="https://img.shields.io/badge/language-Swift5-orange.svg"/></a>
 <a href="https://github.com/topics/viper-architecture?l=swift"><img alt="" src=https://img.shields.io/badge/VIPER-compatible-green"/></a>
+<a href="https://github.com/apple/swift-package-manage"><img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" alt="Swift Package Manager" /></a>
 
 ---
 
@@ -203,8 +204,7 @@ The rest will be added in the near future 😉!
 
 ## Installation
 
-<details><summary>CocoaPods</summary>
-<p>
+<details><summary>CocoaPods</summary><p>
 
 WaterStates is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -217,7 +217,14 @@ pod 'WaterStates'
 
 <details><summary>Swift package manager</summary><p>
     
-Will be added later 😉.
+To integrate using Apple's Swift package manager, add the following as a dependency to your `Package.swift`:
+
+```swift
+.package(url: "https://github.com/BarredEwe/WaterStates.git", .upToNextMajor(from: "0.2.0"))
+```
+
+and then specify `"WaterStates"` as a dependency of the Target in which you wish to use WaterStates.
+
 </p></details>
 
 ---
