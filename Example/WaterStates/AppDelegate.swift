@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         WaterStatesConfig.loadingView.title = nil
+        WaterStatesConfig.emptyView.appearance.actionButtonColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         return true
     }
 

@@ -15,6 +15,8 @@ public class WaterStateView: UIView, StateView {
     public var descriptionInfo: String?
     public var buttonTitle: String?
 
+    public var appearance = StateViewAppearance()
+
     public weak var delegate: WaterStatesDelegate?
 
     // Stack view constraints
@@ -23,7 +25,6 @@ public class WaterStateView: UIView, StateView {
     private var stackBottomConstraint: NSLayoutConstraint!
 
     var contentStackView: UIStackView!
-    var appearance = StateViewAppearance()
 
     private lazy var builder = WaterStatesViewBuilder(appearance: appearance)
 
