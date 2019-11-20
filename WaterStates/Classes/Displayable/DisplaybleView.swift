@@ -17,8 +17,20 @@ extension DisplaybleView {
 
 extension DisplaybleView where Self: UIView {
     public func show(in view: UIView, animated: Bool, completion: ((Bool) -> Swift.Void)?) {
-        frame = view.bounds
-        let addSubview = { view.addSubview(self) }
+        let addSubview = {
+            view.addSubview(self)
+            if #available(iOS 11.0, *) {
+                self.translatesAutoresizingMaskIntoConstraints = false
+                view.addConstraints([
+                    self.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+                    self.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+                    self.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+                    self.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+                ])
+            } else {
+                self.frame = view.bounds
+            }
+        }
 
         guard animated else {
             addSubview()
