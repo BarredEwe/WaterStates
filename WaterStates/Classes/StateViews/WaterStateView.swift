@@ -87,6 +87,7 @@ public class WaterStateView: UIView, StateView {
         stateView.title = title
         stateView.descriptionInfo = descriptionInfo
         stateView.buttonTitle = buttonTitle
+        stateView.appearance = appearance
         return stateView as! Self
     }
 }

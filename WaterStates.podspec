@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WaterStates'
-  s.version          = '0.2.5'
+  s.version          = '0.2.6'
   s.summary          = 'Simple and ready-made states for the view controller'
 
   s.description      = <<-DESC
