@@ -8,6 +8,17 @@ public protocol WaterStates: StateDisplayable {
     var emptyView: WaterStateView? { get }
 }
 
+private class WaterStatesManager {
+
+    var errorView: [String: WaterStateView] = [:]
+    var loadingView: [String: WaterStateView] = [:]
+    var emptyView: [String: WaterStateView] = [:]
+
+    static var shared: WaterStatesManager = {
+        return WaterStatesManager()
+    }()
+}
+
 public extension WaterStates where Self: UIViewController {
 
     internal var stateMachine: StateMachine<ContentType>? {
@@ -21,28 +32,28 @@ public extension WaterStates where Self: UIViewController {
 
     var errorView: WaterStateView? {
         get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.errorView) as? WaterStateView
+            return WaterStatesManager.shared.errorView[self.description]
         }
         set(newValue) {
-            return objc_setAssociatedObject(self, &AssociatedKeys.errorView, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            WaterStatesManager.shared.errorView[self.description] = newValue
         }
     }
 
     var loadingView: WaterStateView? {
         get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.loadingView) as? WaterStateView
+            return WaterStatesManager.shared.loadingView[self.description]
         }
         set(newValue) {
-            return objc_setAssociatedObject(self, &AssociatedKeys.loadingView, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            WaterStatesManager.shared.loadingView[self.description] = newValue
         }
     }
 
     var emptyView: WaterStateView? {
         get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.emptyView) as? WaterStateView
+            return WaterStatesManager.shared.emptyView[self.description]
         }
         set(newValue) {
-            return objc_setAssociatedObject(self, &AssociatedKeys.emptyView, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            WaterStatesManager.shared.emptyView[self.description] = newValue
         }
     }
 }

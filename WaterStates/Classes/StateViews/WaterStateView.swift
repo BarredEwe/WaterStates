@@ -80,4 +80,19 @@ public class WaterStateView: UIView, StateView {
         stackBottomConstraint = contentStackView.centerYAnchor.constraint(equalTo: centerYAnchor)
         stackBottomConstraint.isActive = true
     }
+
+    func copyView() -> Self {
+        let stateView = WaterStateView()
+        stateView.titleView = titleView?.copyView()
+        stateView.title = title
+        stateView.descriptionInfo = descriptionInfo
+        stateView.buttonTitle = buttonTitle
+        return stateView as! Self
+    }
+}
+
+private extension UIView {
+    func copyView<T: UIView>() -> T {
+        return NSKeyedUnarchiver.unarchiveObject(with: NSKeyedArchiver.archivedData(withRootObject: self)) as! T
+    }
 }

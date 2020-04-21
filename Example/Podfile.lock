@@ -1,5 +1,5 @@
 PODS:
-  - WaterStates (0.2.2)
+  - WaterStates (0.2.5)
 
 DEPENDENCIES:
   - WaterStates (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WaterStates: 14ba622e0487a2ad0142e56dba458e98954e8e3d
+  WaterStates: ec136b15b77fc689941b3a1eb2ebef3dcdea8b42
 
 PODFILE CHECKSUM: f6cb66c74015754868198afc7c167073fafcb9e9
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

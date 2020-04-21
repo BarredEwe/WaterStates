@@ -9,7 +9,7 @@
 import UIKit
 import WaterStates
 
-class ExampleViewController: UIViewController, WaterStates {
+class FirstViewController: UIViewController, WaterStates {
 
     var errorView: WaterStateView? {
         get {
@@ -33,8 +33,8 @@ class ExampleViewController: UIViewController, WaterStates {
     }
 }
 
-extension ExampleViewController: WaterStatesDelegate {
-    
+extension FirstViewController: WaterStatesDelegate {
+
     func errorActionTapped(with type: StateActionType) {
         showState(.loading)
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
