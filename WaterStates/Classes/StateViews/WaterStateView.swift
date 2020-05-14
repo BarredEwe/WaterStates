@@ -14,6 +14,7 @@ public class WaterStateView: UIView, StateView {
     public var title: String?
     public var descriptionInfo: String?
     public var buttonTitle: String?
+    public var configureView: ((WaterStateView) -> Void)?
 
     public var appearance = StateViewAppearance()
 
@@ -88,6 +89,8 @@ public class WaterStateView: UIView, StateView {
         stateView.descriptionInfo = descriptionInfo
         stateView.buttonTitle = buttonTitle
         stateView.appearance = appearance
+        stateView.configureView = configureView
+        stateView.configureView?(stateView)
         return stateView as! Self
     }
 }
