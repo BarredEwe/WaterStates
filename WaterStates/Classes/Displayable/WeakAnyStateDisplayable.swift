@@ -10,14 +10,14 @@ public class WeakAnyStateDisplayable<T>: StateDisplayable {
     private let _hideContent: () -> Void
 
     init<U: StateDisplayable>(_ statable: U) where U.ContentType == T {
-        _showLoading = { [weak statable] type in return statable?.showLoading(type) }
-        _hideLoading = { [weak statable] in return statable?.hideLoading() }
-        _showEmpty = { [weak statable] type in return statable?.showEmpty(type) }
-        _hideEmpty = { [weak statable] in return statable?.hideEmpty() }
-        _showError = { [weak statable] error in return statable?.showError(error) }
-        _hideError = { [weak statable] in return statable?.hideError() }
-        _showContent = { [weak statable] content in return statable?.showContent(content) }
-        _hideContent = { [weak statable] in return statable?.hideContent() }
+        _showLoading = { [weak statable] type in statable?.showLoading(type) }
+        _hideLoading = { [weak statable] in statable?.hideLoading() }
+        _showEmpty = { [weak statable] type in statable?.showEmpty(type) }
+        _hideEmpty = { [weak statable] in statable?.hideEmpty() }
+        _showError = { [weak statable] error in statable?.showError(error) }
+        _hideError = { [weak statable] in statable?.hideError() }
+        _showContent = { [weak statable] content in statable?.showContent(content) }
+        _hideContent = { [weak statable] in statable?.hideContent() }
     }
 
     public func showLoading(_ info: StateInfo) {
