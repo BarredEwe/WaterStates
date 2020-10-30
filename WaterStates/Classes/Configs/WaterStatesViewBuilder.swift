@@ -1,7 +1,6 @@
 import Foundation
 
 class WaterStatesViewBuilder {
-
     let appearance: StateViewAppearance
 
     init(appearance: StateViewAppearance) {

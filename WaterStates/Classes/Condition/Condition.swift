@@ -3,7 +3,6 @@ import Foundation
 public typealias DelayedTransition = DispatchWorkItem
 
 public protocol Condition: class {
-
     var delayedTransition: DelayedTransition? { get set }
 
     func setState<T>(_: State<T>, with: StateMachine<T>)
@@ -12,7 +11,6 @@ public protocol Condition: class {
 }
 
 public extension Condition {
-
     func performDelayedTransition(delay: TimeInterval, callback: @escaping () -> Void) {
         let delayedTransition = DispatchWorkItem { [weak self] in
             self?.delayedTransition = nil
@@ -24,9 +22,11 @@ public extension Condition {
             execute: delayedTransition
         )
     }
+
     func processTransition(withMinPresentationTime minPresentationTime: TimeInterval,
                            currentStatePresentationTime: TimeInterval,
-                           callback: @escaping () -> Void) {
+                           callback: @escaping () -> Void)
+    {
         if currentStatePresentationTime < minPresentationTime {
             performDelayedTransition(delay: minPresentationTime - currentStatePresentationTime, callback: callback)
         } else {

@@ -5,7 +5,7 @@ public protocol EmptyStateDelegate: class {
 }
 
 public extension EmptyStateDelegate {
-    func emptyActionTapped(with type: StateActionType) { }
+    func emptyActionTapped(with _: StateActionType) {}
 }
 
 public protocol ErrorStateDelegate: class {
@@ -13,7 +13,7 @@ public protocol ErrorStateDelegate: class {
 }
 
 public extension ErrorStateDelegate {
-    func errorActionTapped(with type: StateActionType) { }
+    func errorActionTapped(with _: StateActionType) {}
 }
 
-public protocol WaterStatesDelegate: EmptyStateDelegate, ErrorStateDelegate { }
+public protocol WaterStatesDelegate: EmptyStateDelegate, ErrorStateDelegate {}

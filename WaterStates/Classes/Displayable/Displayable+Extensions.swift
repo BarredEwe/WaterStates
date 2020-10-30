@@ -1,5 +1,5 @@
 public extension LoadingDisplayable {
-    func showLoading(_ info: StateInfo) {}
+    func showLoading(_: StateInfo) {}
     func hideLoading() {}
 }
 
@@ -9,11 +9,11 @@ public extension ContentDispayable {
 }
 
 public extension EmptyDisplayable {
-    func showEmpty(_ info: StateInfo) { }
+    func showEmpty(_: StateInfo) {}
     func hideEmpty() {}
 }
 
 public extension ErrorDispayable {
-    func showError(_ info: StateInfo) { }
+    func showError(_: StateInfo) {}
     func hideError() {}
 }

@@ -1,5 +1,4 @@
 public class WeakAnyStateDisplayable<T>: StateDisplayable {
-
     private let _showLoading: (StateInfo) -> Void
     private let _hideLoading: () -> Void
     private let _showEmpty: (StateInfo) -> Void
@@ -52,4 +51,3 @@ public class WeakAnyStateDisplayable<T>: StateDisplayable {
         _hideContent()
     }
 }
-

@@ -1,7 +1,6 @@
 import Foundation
 
 public extension State {
-
     static var loading: State {
         return .loading(StateInfo())
     }
@@ -16,10 +15,10 @@ public extension State {
 
     func set(loading: StateInfo? = nil, content: T? = nil, empty: StateInfo? = nil, error: StateInfo? = nil) -> State {
         switch (self, loading, content, empty, error) {
-        case (.loading, let .some(type), _, _, _): return .loading(type)
-        case (.content, _, let .some(value), _, _): return .content(value)
-        case (.empty, _, _,let .some(type), _): return .empty(type)
-        case (.error, _, _, _, let .some(value)): return .error(value)
+        case let (.loading, .some(type), _, _, _): return .loading(type)
+        case let (.content, _, .some(value), _, _): return .content(value)
+        case let (.empty, _, _, .some(type), _): return .empty(type)
+        case let (.error, _, _, _, .some(value)): return .error(value)
         default: return self
         }
     }
@@ -27,7 +26,8 @@ public extension State {
     @discardableResult func `do`(onLoading: ((StateInfo) -> Void)? = nil,
                                  onContent: ((T) -> Void)? = nil,
                                  onEmpty: ((StateInfo) -> Void)? = nil,
-                                 onError: ((StateInfo) -> Void)? = nil) -> State<T> {
+                                 onError: ((StateInfo) -> Void)? = nil) -> State<T>
+    {
         switch self {
         case let .loading(type): onLoading?(type)
         case let .content(value): onContent?(value)

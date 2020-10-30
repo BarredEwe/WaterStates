@@ -1,5 +1,4 @@
 open class ContentCondition: Condition {
-
     public var delayedTransition: DelayedTransition?
 
     private let delay: TimeInterval
@@ -7,6 +6,7 @@ open class ContentCondition: Condition {
     public init(delay: TimeInterval) {
         self.delay = delay
     }
+
     private var isFirstLoadingTransition = true
 
     public func setState<T>(_ state: State<T>, with stateMachine: StateMachine<T>) {

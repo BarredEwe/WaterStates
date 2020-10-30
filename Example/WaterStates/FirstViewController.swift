@@ -10,18 +10,15 @@ import UIKit
 import WaterStates
 
 class FirstViewController: UIViewController, WaterStates {
-
     var errorView: WaterStateView? {
-        get {
-            let stateView = WaterStateView()
-            stateView.titleView = UIImageView(image: UIImage(named: "errorIllustration",
-                                                             in: Bundle(for: WaterStateView.self),
-                                                             compatibleWith: nil))
-            stateView.title = "Example ERROR"
-            stateView.descriptionInfo = "Something went wrong.\nPlease try again."
-            stateView.buttonTitle = "Retry?"
-            return stateView
-        }
+        let stateView = WaterStateView()
+        stateView.titleView = UIImageView(image: UIImage(named: "errorIllustration",
+                                                         in: Bundle(for: WaterStateView.self),
+                                                         compatibleWith: nil))
+        stateView.title = "Example ERROR"
+        stateView.descriptionInfo = "Something went wrong.\nPlease try again."
+        stateView.buttonTitle = "Retry?"
+        return stateView
     }
 
     override func viewDidLoad() {
@@ -34,15 +31,14 @@ class FirstViewController: UIViewController, WaterStates {
 }
 
 extension FirstViewController: WaterStatesDelegate {
-
-    func errorActionTapped(with type: StateActionType) {
+    func errorActionTapped(with _: StateActionType) {
         showState(.loading)
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.showState(.empty)
         }
     }
 
-    func emptyActionTapped(with type: StateActionType) {
+    func emptyActionTapped(with _: StateActionType) {
         showState(.loading)
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.showState(.error)

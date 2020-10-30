@@ -10,7 +10,6 @@ import Foundation
 import WaterStates
 
 class SecondViewController: UIViewController, WaterStates {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         showState(.loading)
