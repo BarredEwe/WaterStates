@@ -1,7 +1,6 @@
 import Foundation
 
 open class StateMachine<T> {
-
     public let displayable: WeakAnyStateDisplayable<T>
 
     public var condition: Condition
@@ -18,11 +17,11 @@ open class StateMachine<T> {
     private var stateSetupTime = Date()
 
     public init<U: StateDisplayable>(displayable: U,
-                              loadingCondition: Condition = LoadingCondition(minPresentationTime: WaterStatesConfig.loadingDefaultMinPresentationTime),
-                              contentCondition: Condition = ContentCondition(delay: WaterStatesConfig.loadingDefaultDelay),
-                              emptyCondition: Condition = EmptyCondition(delay: WaterStatesConfig.loadingDefaultDelay),
-                              errorCondition: Condition = ErrorCondition(delay: WaterStatesConfig.loadingDefaultDelay)
-        ) where U.ContentType == T {
+                                     loadingCondition: Condition = LoadingCondition(minPresentationTime: WaterStatesConfig.loadingDefaultMinPresentationTime),
+                                     contentCondition: Condition = ContentCondition(delay: WaterStatesConfig.loadingDefaultDelay),
+                                     emptyCondition: Condition = EmptyCondition(delay: WaterStatesConfig.loadingDefaultDelay),
+                                     errorCondition: Condition = ErrorCondition(delay: WaterStatesConfig.loadingDefaultDelay)) where U.ContentType == T
+    {
         self.displayable = WeakAnyStateDisplayable(displayable)
         self.loadingCondition = loadingCondition
         self.contentCondition = contentCondition

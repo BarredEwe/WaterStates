@@ -15,8 +15,8 @@ extension DisplaybleView {
     }
 }
 
-extension DisplaybleView where Self: UIView {
-    public func show(in view: UIView, animated: Bool, completion: ((Bool) -> Swift.Void)?) {
+public extension DisplaybleView where Self: UIView {
+    func show(in view: UIView, animated: Bool, completion: ((Bool) -> Swift.Void)?) {
         let addSubview = {
             view.addSubview(self)
             if #available(iOS 11.0, *) {
@@ -44,7 +44,7 @@ extension DisplaybleView where Self: UIView {
         }, completion: completion)
     }
 
-    public func hide(animated: Bool, completion: ((Bool) -> Swift.Void)?) {
+    func hide(animated: Bool, completion: ((Bool) -> Swift.Void)?) {
         let remove = { self.removeFromSuperview() }
 
         guard animated else {

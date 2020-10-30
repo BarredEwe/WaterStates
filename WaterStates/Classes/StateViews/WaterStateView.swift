@@ -1,7 +1,6 @@
 import Foundation
 
 public class WaterStateView: UIView, StateView {
-
     enum ActionType: String {
         case error
         case empty
@@ -40,7 +39,7 @@ public class WaterStateView: UIView, StateView {
             contentStackView.addArrangedSubview(builder.makeTitleLabel(with: title))
         }
 
-        if let descriptionInfo = description ?? descriptionInfo  {
+        if let descriptionInfo = description ?? descriptionInfo {
             contentStackView.addArrangedSubview(builder.makeDescriptionLabel(with: descriptionInfo))
         }
 
@@ -54,7 +53,8 @@ public class WaterStateView: UIView, StateView {
     }
 
     // MARK: Actions
-    @objc func buttonTapped(_ sender: UIButton) {
+
+    @objc func buttonTapped(_: UIButton) {
         switch type {
         case .empty: delegate?.emptyActionTapped(with: .default)
         case .error: delegate?.errorActionTapped(with: .default)
@@ -63,6 +63,7 @@ public class WaterStateView: UIView, StateView {
     }
 
     // MARK: Private Methods
+
     private func showContentStackView() {
         guard contentStackView == nil else {
             contentStackView.arrangedSubviews.forEach { $0.removeFromSuperview() }

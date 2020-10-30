@@ -1,7 +1,6 @@
 import UIKit
 
 public extension WaterStates where Self: UIViewController {
-
     private var waterStatesDelegate: WaterStatesDelegate? {
         return (self as? WaterStatesDelegate) ?? getModuleInput(for: "output") as? WaterStatesDelegate
     }

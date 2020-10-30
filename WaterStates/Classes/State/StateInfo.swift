@@ -1,7 +1,6 @@
 import Foundation
 
 public struct StateInfo {
-
     public static let defaultStateType = "WaterState.default"
 
     /// Type of state for customization (default "WaterState.default").

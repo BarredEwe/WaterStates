@@ -1,7 +1,6 @@
 import UIKit
 
 public extension WaterStates where Self: UIViewController {
-
     func showState(_ state: State<ContentType>) {
         if stateMachine == nil { stateMachine = StateMachine(displayable: self) }
         stateMachine?.setState(state)
@@ -34,5 +33,5 @@ public extension WaterStates where Self: UIViewController {
         defaultHideEmpty()
     }
 
-    func showContent(_: Any) { }
+    func showContent(_: Any) {}
 }

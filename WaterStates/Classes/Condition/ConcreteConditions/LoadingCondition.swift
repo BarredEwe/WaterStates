@@ -1,7 +1,6 @@
 import Foundation
 
 open class LoadingCondition: Condition {
-
     public var delayedTransition: DelayedTransition?
 
     private let minPresentationTime: TimeInterval

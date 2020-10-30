@@ -1,5 +1,4 @@
 open class ErrorCondition: Condition {
-
     public var delayedTransition: DelayedTransition?
 
     private let delay: TimeInterval
