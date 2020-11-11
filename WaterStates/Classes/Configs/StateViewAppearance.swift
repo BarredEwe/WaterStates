@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 /// An object that defines the appearance of StateView items.
 public class StateViewAppearance {

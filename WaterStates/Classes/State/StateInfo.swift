@@ -8,12 +8,17 @@ public struct StateInfo {
 
     /// Title to display in state (default nil).
     public var title: String?
+
     /// Description to display in state (default nil).
     public var description: String?
 
-    public init(type: String = defaultStateType, title: String? = nil, description: String? = nil) {
+    /// Additional user info
+    public var userInfo: [AnyHashable: Any]?
+
+    public init(type: String = defaultStateType, title: String? = nil, description: String? = nil, userInfo: [AnyHashable: Any]? = nil) {
         self.type = type
         self.title = title
         self.description = description
+        self.userInfo = userInfo
     }
 }

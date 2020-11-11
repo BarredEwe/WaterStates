@@ -1,3 +1,5 @@
+import Foundation
+
 open class ContentCondition: Condition {
     public var delayedTransition: DelayedTransition?
 

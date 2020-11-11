@@ -1,3 +1,5 @@
+import Foundation
+
 open class EmptyCondition: Condition {
     public var delayedTransition: DelayedTransition?
 

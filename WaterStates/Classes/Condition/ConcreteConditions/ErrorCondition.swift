@@ -1,3 +1,5 @@
+import Foundation
+
 open class ErrorCondition: Condition {
     public var delayedTransition: DelayedTransition?
 

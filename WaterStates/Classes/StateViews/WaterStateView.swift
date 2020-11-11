@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 public class WaterStateView: UIView, StateView {
     enum ActionType: String {
