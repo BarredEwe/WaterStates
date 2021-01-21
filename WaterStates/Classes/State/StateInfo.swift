@@ -1,10 +1,10 @@
 import Foundation
 
 public struct StateInfo {
-    public static let defaultStateType = "WaterState.default"
+    public typealias StateType = String
 
     /// Type of state for customization (default "WaterState.default").
-    public var type: String
+    public var type: StateType
 
     /// Title to display in state (default nil).
     public var title: String?
@@ -15,10 +15,14 @@ public struct StateInfo {
     /// Additional user info
     public var userInfo: [AnyHashable: Any]?
 
-    public init(type: String = defaultStateType, title: String? = nil, description: String? = nil, userInfo: [AnyHashable: Any]? = nil) {
+    public init(type: StateType = .default, title: String? = nil, description: String? = nil, userInfo: [AnyHashable: Any]? = nil) {
         self.type = type
         self.title = title
         self.description = description
         self.userInfo = userInfo
     }
+}
+
+public extension StateInfo.StateType {
+    static let `default`: String = "WaterState.default"
 }

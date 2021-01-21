@@ -23,11 +23,11 @@ public extension State {
         }
     }
 
-    @discardableResult func `do`(onLoading: ((StateInfo) -> Void)? = nil,
-                                 onContent: ((T) -> Void)? = nil,
-                                 onEmpty: ((StateInfo) -> Void)? = nil,
-                                 onError: ((StateInfo) -> Void)? = nil) -> State<T>
-    {
+    @discardableResult
+    func `do`(onLoading: ((StateInfo) -> Void)? = nil,
+              onContent: ((T) -> Void)? = nil,
+              onEmpty: ((StateInfo) -> Void)? = nil,
+              onError: ((StateInfo) -> Void)? = nil) -> State<T> {
         switch self {
         case let .loading(type): onLoading?(type)
         case let .content(value): onContent?(value)

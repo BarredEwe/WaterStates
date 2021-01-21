@@ -7,7 +7,7 @@ public extension WaterStates where Self: UIViewController {
     }
 
     func showError(_ info: StateInfo) {
-        guard info.type == StateInfo.defaultStateType else { return }
+        guard info.type == .default else { return }
         defaultShowError(info)
     }
 
@@ -16,7 +16,7 @@ public extension WaterStates where Self: UIViewController {
     }
 
     func showLoading(_ info: StateInfo) {
-        guard info.type == StateInfo.defaultStateType else { return }
+        guard info.type == .default else { return }
         defaultShowLoading(info)
     }
 
@@ -25,7 +25,7 @@ public extension WaterStates where Self: UIViewController {
     }
 
     func showEmpty(_ info: StateInfo) {
-        guard info.type == StateInfo.defaultStateType else { return }
+        guard info.type == .default else { return }
         defaultShowEmpty(info)
     }
 
