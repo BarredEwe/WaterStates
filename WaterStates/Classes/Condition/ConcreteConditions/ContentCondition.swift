@@ -18,8 +18,9 @@ open class ContentCondition: Condition {
             if isFirstLoadingTransition {
                 transitionToLoading(stateMachine: stateMachine, info: info)
             } else {
-                performDelayedTransition(delay: delay) { [weak self] in
-                    self?.transitionToLoading(stateMachine: stateMachine, info: info)
+                performDelayedTransition(delay: delay) { [weak self, weak stateMachine] in
+                    guard let self = self, let stateMachine = stateMachine else { return }
+                    self.transitionToLoading(stateMachine: stateMachine, info: info)
                 }
             }
             isFirstLoadingTransition = false

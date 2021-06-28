@@ -13,19 +13,25 @@ open class LoadingCondition: Condition {
         switch state {
         case .loading: return
         case let .content(value):
-            processTransition(withMinPresentationTime: minPresentationTime, currentStatePresentationTime: stateMachine.currentStatePresentationTime) {
+            processTransition(withMinPresentationTime: minPresentationTime,
+                              currentStatePresentationTime: stateMachine.currentStatePresentationTime) { [weak stateMachine] in
+                guard let stateMachine = stateMachine else { return }
                 stateMachine.displayable.hideLoading()
                 stateMachine.displayable.showContent(value)
                 stateMachine.condition = stateMachine.contentCondition
             }
         case let .empty(value):
-            processTransition(withMinPresentationTime: minPresentationTime, currentStatePresentationTime: stateMachine.currentStatePresentationTime) {
+            processTransition(withMinPresentationTime: minPresentationTime,
+                              currentStatePresentationTime: stateMachine.currentStatePresentationTime) { [weak stateMachine] in
+                guard let stateMachine = stateMachine else { return }
                 stateMachine.displayable.hideLoading()
                 stateMachine.displayable.showEmpty(value)
                 stateMachine.condition = stateMachine.emptyCondition
             }
         case let .error(value):
-            processTransition(withMinPresentationTime: minPresentationTime, currentStatePresentationTime: stateMachine.currentStatePresentationTime) {
+            processTransition(withMinPresentationTime: minPresentationTime,
+                              currentStatePresentationTime: stateMachine.currentStatePresentationTime) { [weak stateMachine] in
+                guard let stateMachine = stateMachine else { return }
                 stateMachine.displayable.hideLoading()
                 stateMachine.displayable.showError(value)
                 stateMachine.condition = stateMachine.errorCondition

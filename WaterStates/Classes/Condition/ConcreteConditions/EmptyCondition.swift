@@ -13,7 +13,8 @@ open class EmptyCondition: Condition {
         switch state {
         case let .loading(type):
             delayedTransition?.cancel()
-            performDelayedTransition(delay: delay) {
+            performDelayedTransition(delay: delay) { [weak stateMachine] in
+                guard let stateMachine = stateMachine else { return }
                 stateMachine.displayable.hideEmpty()
                 stateMachine.displayable.showLoading(type)
                 stateMachine.condition = stateMachine.loadingCondition
